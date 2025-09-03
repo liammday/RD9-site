@@ -17,6 +17,8 @@
     @keyframes rise { from { transform: translateY(8px); opacity:0 } to { transform: translateY(0); opacity:1 } }
     .animate-fade { animation: fade .8s ease-out both }
     .animate-rise { animation: rise .8s ease-out both }
+    .price-section table { width:100%; table-layout:fixed; }
+    .price-section th, .price-section td { width:33.333%; }
   </style>
 </head>
 <body class="min-h-full bg-neutral-950 text-neutral-100 antialiased">
@@ -100,7 +102,7 @@
           <div class="w-full sm:w-auto">
             <label for="carInput" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
             <input id="carInput" list="carOptions" name="carInput" placeholder="Start typing model..."
-                   class="mt-2 w-full sm:w-80 rounded-md bg-neutral-900 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/40" />
+                   class="mt-2 w-full sm:w-96 rounded-md bg-neutral-900 border-2 border-red-600 px-4 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-red-600" />
             <datalist id="carOptions">
               <option data-value="all" value="All models"></option>
               <option data-value="911-992" value="911 (992)"></option>
@@ -124,9 +126,10 @@
               <option data-value="cayenne-diesel" value="Cayenne Diesel V6 (958 E2)"></option>
               <option data-value="cayenne-gts" value="Cayenne / S / GTS (958 E2)"></option>
             </datalist>
-            <button id="showAllBtn" type="button" class="mt-2 text-xs text-neutral-400 underline">Show all</button>
+            <button id="showAllBtn" type="button" class="mt-2 text-sm font-semibold text-red-500 underline">Show all</button>
           </div>
           <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">None</span></p>
+          <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
         </div>
       </div>
 
@@ -569,7 +572,9 @@
       const datalist = document.getElementById('carOptions');
       const showAllBtn = document.getElementById('showAllBtn');
       const note = document.getElementById('filterNote').querySelector('span');
+      const noResults = document.getElementById('noResults');
       const sections = Array.from(document.querySelectorAll('.price-section'));
+      let allVisible = false;
 
       const options = Array.from(datalist.options);
       const labelToCode = Object.fromEntries(options.map(o => [o.value, o.dataset.value]));
@@ -606,6 +611,7 @@
       }
 
       function applyFilter(value) {
+        noResults.classList.add('hidden');
         if (!value) {
           sections.forEach(sec => {
             if (!sec.classList.contains('hidden')) hideSection(sec);
@@ -629,27 +635,55 @@
       if (saved && codeToLabel[saved]) {
         input.value = codeToLabel[saved];
         applyFilter(saved);
+        if (saved === 'all') {
+          showAllBtn.textContent = 'Hide all';
+          allVisible = true;
+        }
       } else {
         note.textContent = 'None';
       }
 
+      // Clear on focus
+      input.addEventListener('focus', () => {
+        input.value = '';
+        setCookie('selectedCar', '', -1);
+        applyFilter(null);
+        showAllBtn.textContent = 'Show all';
+        allVisible = false;
+      });
+
       // Listen for changes
       input.addEventListener('change', () => {
-        const code = labelToCode[input.value];
+        const code = labelToCode[input.value.trim()];
         if (code) {
           setCookie('selectedCar', code, 30);
           applyFilter(code);
+          showAllBtn.textContent = 'Show all';
+          allVisible = false;
           const firstVisible = sections.find(s => !s.classList.contains('hidden'));
           if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
           applyFilter(null);
+          noResults.classList.remove('hidden');
+          showAllBtn.textContent = 'Show all';
+          allVisible = false;
         }
       });
 
       showAllBtn.addEventListener('click', () => {
-        input.value = codeToLabel['all'];
-        setCookie('selectedCar', 'all', 30);
-        applyFilter('all');
+        if (!allVisible) {
+          input.value = codeToLabel['all'];
+          setCookie('selectedCar', 'all', 30);
+          applyFilter('all');
+          showAllBtn.textContent = 'Hide all';
+          allVisible = true;
+        } else {
+          input.value = '';
+          setCookie('selectedCar', '', -1);
+          applyFilter(null);
+          showAllBtn.textContent = 'Show all';
+          allVisible = false;
+        }
       });
     })();
   </script>
