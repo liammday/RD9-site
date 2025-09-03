@@ -55,7 +55,7 @@
   </header>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="fixed inset-x-0 top-0 z-40 hidden vh-100">
+  <div id="mobileMenu" class="fixed inset-0 z-40 hidden">
     <div id="menuOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
     <nav id="menuPanel" class="absolute top-0 right-0 h-full w-3/5 max-w-xs bg-neutral-950 p-6 transform translate-x-full transition-transform duration-300">
       <button id="menuClose" class="absolute top-4 right-4 p-2" aria-label="Close menu">
@@ -739,12 +739,14 @@
         mobileMenu.classList.remove('hidden');
         requestAnimationFrame(() => menuPanel.classList.remove('translate-x-full'));
         openBtn.classList.add('hidden');
+        document.body.classList.add('overflow-hidden');
       }
 
       function closeMenu() {
         menuPanel.classList.add('translate-x-full');
         menuPanel.addEventListener('transitionend', () => mobileMenu.classList.add('hidden'), { once: true });
         openBtn.classList.remove('hidden');
+        document.body.classList.remove('overflow-hidden');
       }
 
       openBtn.addEventListener('click', openMenu);
