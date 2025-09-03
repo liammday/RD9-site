@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RD9 Automotive — Porsche & Prestige Specialists</title>
+  <meta name="description" content="RD9 Automotive — Porsche and prestige vehicle specialists. Fixed-price servicing, performance, wheel alignment, EV/hybrid, and pre-purchase inspections." />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Reduce motion for users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+      .animate-fade { animation: none !important; }
+      .animate-rise { animation: none !important; }
+    }
+    @keyframes fade { from {opacity: 0} to {opacity:1} }
+    @keyframes rise { from { transform: translateY(8px); opacity:0 } to { transform: translateY(0); opacity:1 } }
+    .animate-fade { animation: fade .8s ease-out both }
+    .animate-rise { animation: rise .8s ease-out both }
+  </style>
+</head>
+<body class="min-h-full bg-neutral-950 text-neutral-100 antialiased">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-xl">RD9 Automotive</a>
+      <nav aria-label="Primary" class="hidden md:block">
+        <ul class="flex gap-8 text-sm">
+          <li><a class="hover:opacity-80" href="#services">Services & Prices</a></li>
+          <li><a class="hover:opacity-80" href="#about">About</a></li>
+          <li><a class="hover:opacity-80" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-3 py-2 text-sm font-medium hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">
+        Book / Enquire
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-950 to-black"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-36">
+      <div class="max-w-3xl animate-rise">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">The Gold Standard</h1>
+        <p class="mt-6 text-lg text-neutral-300">
+          Welcome to RD9 Automotive, Porsche and Prestige vehicle specialists. We feel that, for too long, the motor trade has fallen short, and we are here to change that.
+          From a prized possession to your everyday vehicle, we are here to maintain, repair and modify your vehicles to the highest of standards.
+        </p>
+        <p class="mt-4 text-neutral-300">
+          We use factory level Porsche Diagnostic equipment, original Porsche parts and a selection of the best in the aftermarket to offer fixed price Porsche servicing.
+          We also offer a Pre-purchase Inspection service to help you find the right car for your next purchase. See our services page for more detail on all the services offered by RD9 Automotive.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#services" class="rounded-md bg-white text-neutral-900 px-5 py-3 font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/60">View Services & Prices</a>
+          <a href="#about" class="px-5 py-3 font-semibold border border-white/20 rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">About RD9</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services — blurbs -->
+  <section id="services" class="bg-neutral-900/60 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <header class="max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Services</h2>
+        <p class="mt-3 text-neutral-300">High-end care with main-dealer tooling, delivered with a personal touch.</p>
+      </header>
+
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Porsche Servicing</h3>
+          <p class="mt-2 text-sm text-neutral-300">We offer a wide range of servicing and repairs… genuine Porsche parts… or the very best of the aftermarket.</p>
+        </article>
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Performance</h3>
+          <p class="mt-2 text-sm text-neutral-300">Unlock the full potential of your vehicle… tuning options… package deal with one of our performance maps.</p>
+        </article>
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Prestige</h3>
+          <p class="mt-2 text-sm text-neutral-300">We understand that your luxury vehicle demands nothing but the best…</p>
+        </article>
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Electric & Hybrid</h3>
+          <p class="mt-2 text-sm text-neutral-300">We offer fully qualified High Voltage technicians…</p>
+        </article>
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Wheel Alignment</h3>
+          <p class="mt-2 text-sm text-neutral-300">Suspension alignments are a critical aspect of vehicle maintenance…</p>
+        </article>
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+          <h3 class="font-semibold text-lg">Pre-Purchase Inspections</h3>
+          <p class="mt-2 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
+        </article>
+      </div>
+
+      <!-- Car picker -->
+      <div class="mt-14">
+        <div class="flex flex-col sm:flex-row items-start sm:items-end gap-4">
+          <div class="w-full sm:w-auto">
+            <label for="carSelect" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
+            <select id="carSelect" name="carSelect"
+                    class="mt-2 w-full sm:w-80 rounded-md bg-neutral-900 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/40">
+              <option value="all">All models</option>
+              <optgroup label="911">
+                <option value="911-992">911 (992)</option>
+                <option value="911-991">911 (991)</option>
+                <option value="911-997">911 (997)</option>
+                <option value="911-996">911 (996)</option>
+              </optgroup>
+              <optgroup label="Boxster">
+                <option value="boxster-718">Boxster 718</option>
+                <option value="boxster-981">Boxster 981</option>
+                <option value="boxster-987-2">Boxster 987 Gen 2</option>
+                <option value="boxster-987-1">Boxster 987 Gen 1</option>
+                <option value="boxster-986">Boxster 986</option>
+              </optgroup>
+              <optgroup label="Cayman">
+                <option value="cayman-718">Cayman 718</option>
+                <option value="cayman-981">Cayman 981</option>
+                <option value="cayman-987-2">Cayman 987 Gen 2</option>
+                <option value="cayman-987-1">Cayman 987 Gen 1</option>
+              </optgroup>
+              <optgroup label="SUV & Others">
+                <option value="macan">Macan / S</option>
+                <option value="macan-diesel">Macan Diesel</option>
+                <option value="macan-turbo">Macan Turbo / GTS</option>
+                <option value="panamera">Panamera</option>
+                <option value="cayenne-v6">Cayenne V6 (958 E2)</option>
+                <option value="cayenne-diesel">Cayenne Diesel V6 (958 E2)</option>
+                <option value="cayenne-gts">Cayenne / S / GTS (958 E2)</option>
+              </optgroup>
+            </select>
+          </div>
+          <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">All models</span></p>
+        </div>
+      </div>
+
+      <!-- Price lists -->
+      <div class="mt-8 space-y-12" id="priceLists" aria-live="polite">
+        <!-- 911 (992) -->
+        <section class="price-section" data-model="911-992">
+          <h3 class="text-2xl font-bold">911 (992)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr>
+                  <th scope="col" class="px-4 py-3 text-left font-semibold">Job</th>
+                  <th scope="col" class="px-4 py-3 text-left font-semibold">Interval</th>
+                  <th scope="col" class="px-4 py-3 text-left font-semibold">Price (ex-VAT)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£345</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£465</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Air Filter</td><td class="px-4 py-3">24k / 4y, 40k / 4y, 60k / 6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">48k / 4y, 60k / 6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-6 font-semibold">992 Turbo / Turbo&nbsp;S (2020–2022)</h4>
+          <div class="mt-2 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£345</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£465</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£360</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-6 font-semibold">992 GT3 / GT3 RS (2021–2022)</h4>
+          <div class="mt-2 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£345</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£465</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£255</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 911 (991) -->
+        <section class="price-section" data-model="911-991">
+          <h3 class="text-2xl font-bold">911 (991)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price (ex-VAT)</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£395</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">Every 4 years</td><td class="px-4 py-3">£470</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£295</td></tr>
+                <tr><td class="px-4 py-3">Air Filter</td><td class="px-4 py-3">24k / 4y, 40k / 4y, 60k / 6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">48k / 4y, 60k / 6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75 / £95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 911 (997) -->
+        <section class="price-section" data-model="911-997">
+          <h3 class="text-2xl font-bold">911 (997)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£350</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">Every 4 years</td><td class="px-4 py-3">£440</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">60k miles / 4 years</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Air Filter</td><td class="px-4 py-3">—</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k / 6y</td><td class="px-4 py-3">£135</td></tr>
+                <tr><td class="px-4 py-3">Manual Gearbox Oil</td><td class="px-4 py-3">120k miles / 12 years</td><td class="px-4 py-3">£95</td></tr>
+                <tr><td class="px-4 py-3">Tip Gearbox Oil</td><td class="px-4 py-3">—</td><td class="px-4 py-3">£315</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="mt-6 font-semibold">997 Turbo / GT2 (Gen 1) (2005–2008)</h4>
+          <div class="mt-2 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£370</td></tr>
+                <tr><td class="px-4 py-3">Major Service (includes plugs & filters)</td><td class="px-4 py-3">Every 4 years</td><td class="px-4 py-3">£895</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">—</td><td class="px-4 py-3">£175</td></tr>
+                <tr><td class="px-4 py-3">Manual Gearbox Oil</td><td class="px-4 py-3">—</td><td class="px-4 py-3">£95</td></tr>
+                <tr><td class="px-4 py-3">Tip Gearbox Oil</td><td class="px-4 py-3">—</td><td class="px-4 py-3">£315</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 911 (996) -->
+        <section class="price-section" data-model="911-996">
+          <h3 class="text-2xl font-bold">911 (996)</h3>
+          <p class="mt-2 text-sm text-neutral-300">Page exists but no line-item prices are displayed (site shows unfilled/POA entries). Known examples include air filter £52, aux belt £149, brake fluid change £95.</p>
+        </section>
+
+        <!-- Boxster 718 -->
+        <section class="price-section" data-model="boxster-718">
+          <h3 class="text-2xl font-bold">Boxster 718 (2017–2022)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£395</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£470</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (4-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£185</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (6-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£215</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£160</td></tr>
+                <tr><td class="px-4 py-3">Air Filter</td><td class="px-4 py-3">24k/4y, 40k/4y, 60k/6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Boxster 981 -->
+        <section class="price-section" data-model="boxster-981">
+          <h3 class="text-2xl font-bold">Boxster 981 (2013–2016)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£395</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£470</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£165</td></tr>
+                <tr><td class="px-4 py-3">Air Filter</td><td class="px-4 py-3">24k/4y, 40k/4y, 60k/6y</td><td class="px-4 py-3">POA</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Boxster 987 Gen 2 -->
+        <section class="price-section" data-model="boxster-987-2">
+          <h3 class="text-2xl font-bold">Boxster 987 (Gen 2) (2009–2012)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£370</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£455</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£200</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£140</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Boxster 987 Gen 1 -->
+        <section class="price-section" data-model="boxster-987-1">
+          <h3 class="text-2xl font-bold">Boxster 987 (Gen 1) (2005–2008)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£350</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£440</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">60k miles / 4 years</td><td class="px-4 py-3">£195</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£140</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Boxster 986 -->
+        <section class="price-section" data-model="boxster-986">
+          <h3 class="text-2xl font-bold">Boxster 986 (1998–2004)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">12k miles / 2 years</td><td class="px-4 py-3">£325</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">24k miles / 4 years</td><td class="px-4 py-3">£420</td></tr>
+                <tr><td class="px-4 py-3">Maintenance</td><td class="px-4 py-3">Every 12 months</td><td class="px-4 py-3">£95</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">48k miles / 4 years</td><td class="px-4 py-3">£175</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Cayman 718 & 981 -->
+        <section class="price-section" data-model="cayman-718" data-alias="cayman-981">
+          <h3 class="text-2xl font-bold">Cayman 718 / 981</h3>
+          <p class="mt-2 text-sm text-neutral-300">Pricing mirrors Boxster 718/981.</p>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£395</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£470</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (4-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£185</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (6-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£215</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£160 / £165</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Cayman 987 Gen 2 & Gen 1 -->
+        <section class="price-section" data-model="cayman-987-2" data-alias="cayman-987-1">
+          <h3 class="text-2xl font-bold">Cayman 987 (Gen 2 & Gen 1)</h3>
+          <p class="mt-2 text-sm text-neutral-300">Pricing mirrors Boxster 987 Gen 2/Gen 1.</p>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£370 / £350</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£455 / £440</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k–60k miles / 4–6 years</td><td class="px-4 py-3">£200 / £195</td></tr>
+                <tr><td class="px-4 py-3">Aux Belt</td><td class="px-4 py-3">60k miles / 6 years</td><td class="px-4 py-3">£140</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Macan / S -->
+        <section class="price-section" data-model="macan">
+          <h3 class="text-2xl font-bold">Macan / S (2014–2023)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£250</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£400</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£485</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (4-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£190</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs (6-cyl)</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£210</td></tr>
+                <tr><td class="px-4 py-3">PDK Oil</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£290</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Macan Diesel -->
+        <section class="price-section" data-model="macan-diesel">
+          <h3 class="text-2xl font-bold">Macan Diesel (2014–2018)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£250</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£400</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£485</td></tr>
+                <tr><td class="px-4 py-3">PDK Oil</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£290</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Macan Turbo / GTS -->
+        <section class="price-section" data-model="macan-turbo">
+          <h3 class="text-2xl font-bold">Macan Turbo / GTS (2014–2023)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£250</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£400</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£485</td></tr>
+                <tr><td class="px-4 py-3">Spark Plugs</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£210</td></tr>
+                <tr><td class="px-4 py-3">PDK Oil</td><td class="px-4 py-3">40k miles / 6 years</td><td class="px-4 py-3">£290</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£95</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Panamera -->
+        <section class="price-section" data-model="panamera">
+          <h3 class="text-2xl font-bold">Panamera</h3>
+          <p class="mt-2 text-sm text-neutral-300">No items found (price list currently empty on source).</p>
+        </section>
+
+        <!-- Cayenne V6 -->
+        <section class="price-section" data-model="cayenne-v6">
+          <h3 class="text-2xl font-bold">Cayenne V6 (958 E2) (2010–2017)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£265</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£325</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+                <tr><td class="px-4 py-3">Air Filter / Aux Belt</td><td class="px-4 py-3">Various</td><td class="px-4 py-3">POA</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Cayenne Diesel V6 -->
+        <section class="price-section" data-model="cayenne-diesel">
+          <h3 class="text-2xl font-bold">Cayenne Diesel V6 (958 E2) (2010–2017)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£265</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£395</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+                <tr><td class="px-4 py-3">Air Filter / Aux Belt</td><td class="px-4 py-3">Various</td><td class="px-4 py-3">POA</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Cayenne / S / GTS -->
+        <section class="price-section" data-model="cayenne-gts">
+          <h3 class="text-2xl font-bold">Cayenne / S / GTS (958 E2) (2010–2017)</h3>
+          <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
+            <table class="min-w-full table-auto text-sm">
+              <thead class="bg-neutral-900/80">
+                <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price</th></tr>
+              </thead>
+              <tbody class="divide-y divide-white/10">
+                <tr><td class="px-4 py-3">Oil Service</td><td class="px-4 py-3">Timeline variable</td><td class="px-4 py-3">£225</td></tr>
+                <tr><td class="px-4 py-3">Minor Service</td><td class="px-4 py-3">20k miles / 2 years</td><td class="px-4 py-3">£265</td></tr>
+                <tr><td class="px-4 py-3">Major Service</td><td class="px-4 py-3">40k miles / 4 years</td><td class="px-4 py-3">£325</td></tr>
+                <tr><td class="px-4 py-3">Brake Fluid Change</td><td class="px-4 py-3">Every 2 years</td><td class="px-4 py-3">£75</td></tr>
+                <tr><td class="px-4 py-3">Air Filter / Aux Belt</td><td class="px-4 py-3">Various</td><td class="px-4 py-3">POA</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t border-white/10 bg-neutral-900/50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About</h2>
+      <div class="mt-6 max-w-3xl space-y-4 text-neutral-300">
+        <p><strong>The Gold Standard</strong><br>RD9 was founded in 2020 by Ryan Day. Ryan started his career at Porsche back in 2007 where he went through his apprenticeship all the way to achieving the gold certification in 2018. Over the last year he’s been venturing into other prestigious manufactures from lotus to Lamborghini. Now his goal is to take what he thinks works from the main dealers and add the personal touch that’s much needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Contact us</h2>
+      <div class="mt-8 grid lg:grid-cols-2 gap-10">
+        <div>
+          <div class="space-y-3 text-neutral-300">
+            <p><span class="font-semibold text-neutral-100">Address:</span><br>Unit 2, Coppings Farm, Tonbridge, TN11 8PN</p>
+            <p><span class="font-semibold text-neutral-100">Hours:</span><br>8am – 5pm, Monday to Saturday</p>
+            <p><span class="font-semibold text-neutral-100">Email:</span> <a class="underline hover:no-underline" href="mailto:info@rd9.co.uk">info@RD9.co.uk</a></p>
+            <p><span class="font-semibold text-neutral-100">Phone:</span> <a class="underline hover:no-underline" href="tel:+447915211671">+44 (0) 7915 211 671</a></p>
+          </div>
+        </div>
+        <div>
+          <form class="rounded-lg border border-white/10 p-6 bg-neutral-900 space-y-4" aria-label="Enquiry form (static)">
+            <p class="text-sm text-neutral-400">This is a static demo form. Replace with your preferred form endpoint/service.</p>
+            <div>
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input id="name" name="name" type="text" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30"></textarea>
+            </div>
+            <button type="button" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-12 text-xs text-neutral-500">© RD9 2024.</div>
+    </div>
+  </section>
+
+  <!-- Filter & Cookie Script -->
+  <script>
+    (function () {
+      const select = document.getElementById('carSelect');
+      const note = document.getElementById('filterNote').querySelector('span');
+      const sections = Array.from(document.querySelectorAll('.price-section'));
+
+      function setCookie(name, value, days) {
+        const maxAge = days * 24 * 60 * 60;
+        document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + '; Max-Age=' + maxAge + '; Path=/';
+      }
+
+      function getCookie(name) {
+        const target = encodeURIComponent(name) + '=';
+        return document.cookie.split(';').map(c => c.trim()).find(c => c.startsWith(target))?.slice(target.length) || null;
+      }
+
+      function humanLabel(val) {
+        const opt = select.querySelector(`option[value="${val}"]`);
+        return opt ? opt.textContent : 'All models';
+      }
+
+      function matchesModel(section, value) {
+        if (value === 'all') return true;
+        const primary = section.getAttribute('data-model');
+        const alias = section.getAttribute('data-alias') || '';
+        return primary === value || alias === value;
+      }
+
+      function applyFilter(value) {
+        sections.forEach(sec => {
+          const show = matchesModel(sec, value);
+          sec.classList.toggle('hidden', !show);
+        });
+        note.textContent = value === 'all' ? 'All models' : humanLabel(value);
+      }
+
+      // Initialise from cookie
+      const saved = getCookie('selectedCar');
+      if (saved && select.querySelector(`option[value="${saved}"]`)) {
+        select.value = saved;
+      }
+      applyFilter(select.value);
+
+      // Listen for changes
+      select.addEventListener('change', () => {
+        const val = select.value;
+        setCookie('selectedCar', val, 30); // remember for 30 days
+        applyFilter(val);
+        // smooth scroll to first visible section for context
+        const firstVisible = sections.find(s => !s.classList.contains('hidden'));
+        if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
+</body>
+</html>
