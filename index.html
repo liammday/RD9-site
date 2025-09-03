@@ -8,10 +8,12 @@
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    html { scroll-behavior: smooth; }
     /* Reduce motion for users who prefer it */
     @media (prefers-reduced-motion: reduce) {
       .animate-fade { animation: none !important; }
       .animate-rise { animation: none !important; }
+      html { scroll-behavior: auto; }
     }
     @keyframes fade { from {opacity: 0} to {opacity:1} }
     @keyframes rise { from { transform: translateY(8px); opacity:0 } to { transform: translateY(0); opacity:1 } }
@@ -98,11 +100,11 @@
 
       <!-- Car picker -->
       <div class="mt-14">
-        <div class="flex flex-col sm:flex-row items-start sm:items-end gap-4">
+        <div class="flex flex-col items-center gap-4 text-center">
           <div class="w-full sm:w-auto">
-            <label for="carInput" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
+            <label for="carInput" class="block text-sm font-medium text-neutral-200 text-center">Filter price list by your car</label>
             <input id="carInput" list="carOptions" name="carInput" placeholder="Start typing model..."
-                   class="mt-2 w-full sm:w-96 rounded-md bg-neutral-900 border-2 border-red-600 px-4 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-red-600" />
+                   class="mt-2 w-full sm:w-96 rounded-md bg-neutral-900 border border-white/20 px-4 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-white/40" />
             <datalist id="carOptions">
               <option data-value="all" value="All models"></option>
               <option data-value="911-992" value="911 (992)"></option>
@@ -126,7 +128,7 @@
               <option data-value="cayenne-diesel" value="Cayenne Diesel V6 (958 E2)"></option>
               <option data-value="cayenne-gts" value="Cayenne / S / GTS (958 E2)"></option>
             </datalist>
-            <button id="showAllBtn" type="button" class="mt-2 text-sm font-semibold text-red-500 underline">Show all</button>
+            <button id="showAllBtn" type="button" class="mt-2 text-sm text-neutral-300 underline hover:text-white">Show all</button>
           </div>
           <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">None</span></p>
           <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
@@ -660,8 +662,6 @@
           applyFilter(code);
           showAllBtn.textContent = 'Show all';
           allVisible = false;
-          const firstVisible = sections.find(s => !s.classList.contains('hidden'));
-          if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
           applyFilter(null);
           noResults.classList.remove('hidden');
