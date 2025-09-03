@@ -98,48 +98,42 @@
       <div class="mt-14">
         <div class="flex flex-col sm:flex-row items-start sm:items-end gap-4">
           <div class="w-full sm:w-auto">
-            <label for="carSelect" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
-            <select id="carSelect" name="carSelect"
-                    class="mt-2 w-full sm:w-80 rounded-md bg-neutral-900 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/40">
-              <option value="all">All models</option>
-              <optgroup label="911">
-                <option value="911-992">911 (992)</option>
-                <option value="911-991">911 (991)</option>
-                <option value="911-997">911 (997)</option>
-                <option value="911-996">911 (996)</option>
-              </optgroup>
-              <optgroup label="Boxster">
-                <option value="boxster-718">Boxster 718</option>
-                <option value="boxster-981">Boxster 981</option>
-                <option value="boxster-987-2">Boxster 987 Gen 2</option>
-                <option value="boxster-987-1">Boxster 987 Gen 1</option>
-                <option value="boxster-986">Boxster 986</option>
-              </optgroup>
-              <optgroup label="Cayman">
-                <option value="cayman-718">Cayman 718</option>
-                <option value="cayman-981">Cayman 981</option>
-                <option value="cayman-987-2">Cayman 987 Gen 2</option>
-                <option value="cayman-987-1">Cayman 987 Gen 1</option>
-              </optgroup>
-              <optgroup label="SUV & Others">
-                <option value="macan">Macan / S</option>
-                <option value="macan-diesel">Macan Diesel</option>
-                <option value="macan-turbo">Macan Turbo / GTS</option>
-                <option value="panamera">Panamera</option>
-                <option value="cayenne-v6">Cayenne V6 (958 E2)</option>
-                <option value="cayenne-diesel">Cayenne Diesel V6 (958 E2)</option>
-                <option value="cayenne-gts">Cayenne / S / GTS (958 E2)</option>
-              </optgroup>
-            </select>
+            <label for="carInput" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
+            <input id="carInput" list="carOptions" name="carInput" placeholder="Start typing model..."
+                   class="mt-2 w-full sm:w-80 rounded-md bg-neutral-900 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/40" />
+            <datalist id="carOptions">
+              <option data-value="all" value="All models"></option>
+              <option data-value="911-992" value="911 (992)"></option>
+              <option data-value="911-991" value="911 (991)"></option>
+              <option data-value="911-997" value="911 (997)"></option>
+              <option data-value="911-996" value="911 (996)"></option>
+              <option data-value="boxster-718" value="Boxster 718"></option>
+              <option data-value="boxster-981" value="Boxster 981"></option>
+              <option data-value="boxster-987-2" value="Boxster 987 Gen 2"></option>
+              <option data-value="boxster-987-1" value="Boxster 987 Gen 1"></option>
+              <option data-value="boxster-986" value="Boxster 986"></option>
+              <option data-value="cayman-718" value="Cayman 718"></option>
+              <option data-value="cayman-981" value="Cayman 981"></option>
+              <option data-value="cayman-987-2" value="Cayman 987 Gen 2"></option>
+              <option data-value="cayman-987-1" value="Cayman 987 Gen 1"></option>
+              <option data-value="macan" value="Macan / S"></option>
+              <option data-value="macan-diesel" value="Macan Diesel"></option>
+              <option data-value="macan-turbo" value="Macan Turbo / GTS"></option>
+              <option data-value="panamera" value="Panamera"></option>
+              <option data-value="cayenne-v6" value="Cayenne V6 (958 E2)"></option>
+              <option data-value="cayenne-diesel" value="Cayenne Diesel V6 (958 E2)"></option>
+              <option data-value="cayenne-gts" value="Cayenne / S / GTS (958 E2)"></option>
+            </datalist>
+            <button id="showAllBtn" type="button" class="mt-2 text-xs text-neutral-400 underline">Show all</button>
           </div>
-          <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">All models</span></p>
+          <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">None</span></p>
         </div>
       </div>
 
       <!-- Price lists -->
       <div class="mt-8 space-y-12" id="priceLists" aria-live="polite">
         <!-- 911 (992) -->
-        <section class="price-section" data-model="911-992">
+        <section class="price-section hidden" data-model="911-992">
           <h3 class="text-2xl font-bold">911 (992)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -193,7 +187,7 @@
         </section>
 
         <!-- 911 (991) -->
-        <section class="price-section" data-model="911-991">
+        <section class="price-section hidden" data-model="911-991">
           <h3 class="text-2xl font-bold">911 (991)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -213,7 +207,7 @@
         </section>
 
         <!-- 911 (997) -->
-        <section class="price-section" data-model="911-997">
+        <section class="price-section hidden" data-model="911-997">
           <h3 class="text-2xl font-bold">911 (997)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -252,13 +246,13 @@
         </section>
 
         <!-- 911 (996) -->
-        <section class="price-section" data-model="911-996">
+        <section class="price-section hidden" data-model="911-996">
           <h3 class="text-2xl font-bold">911 (996)</h3>
           <p class="mt-2 text-sm text-neutral-300">Page exists but no line-item prices are displayed (site shows unfilled/POA entries). Known examples include air filter £52, aux belt £149, brake fluid change £95.</p>
         </section>
 
         <!-- Boxster 718 -->
-        <section class="price-section" data-model="boxster-718">
+        <section class="price-section hidden" data-model="boxster-718">
           <h3 class="text-2xl font-bold">Boxster 718 (2017–2022)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -279,7 +273,7 @@
         </section>
 
         <!-- Boxster 981 -->
-        <section class="price-section" data-model="boxster-981">
+        <section class="price-section hidden" data-model="boxster-981">
           <h3 class="text-2xl font-bold">Boxster 981 (2013–2016)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -299,7 +293,7 @@
         </section>
 
         <!-- Boxster 987 Gen 2 -->
-        <section class="price-section" data-model="boxster-987-2">
+        <section class="price-section hidden" data-model="boxster-987-2">
           <h3 class="text-2xl font-bold">Boxster 987 (Gen 2) (2009–2012)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -318,7 +312,7 @@
         </section>
 
         <!-- Boxster 987 Gen 1 -->
-        <section class="price-section" data-model="boxster-987-1">
+        <section class="price-section hidden" data-model="boxster-987-1">
           <h3 class="text-2xl font-bold">Boxster 987 (Gen 1) (2005–2008)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -337,7 +331,7 @@
         </section>
 
         <!-- Boxster 986 -->
-        <section class="price-section" data-model="boxster-986">
+        <section class="price-section hidden" data-model="boxster-986">
           <h3 class="text-2xl font-bold">Boxster 986 (1998–2004)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -356,7 +350,7 @@
         </section>
 
         <!-- Cayman 718 & 981 -->
-        <section class="price-section" data-model="cayman-718" data-alias="cayman-981">
+        <section class="price-section hidden" data-model="cayman-718" data-alias="cayman-981">
           <h3 class="text-2xl font-bold">Cayman 718 / 981</h3>
           <p class="mt-2 text-sm text-neutral-300">Pricing mirrors Boxster 718/981.</p>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
@@ -377,7 +371,7 @@
         </section>
 
         <!-- Cayman 987 Gen 2 & Gen 1 -->
-        <section class="price-section" data-model="cayman-987-2" data-alias="cayman-987-1">
+        <section class="price-section hidden" data-model="cayman-987-2" data-alias="cayman-987-1">
           <h3 class="text-2xl font-bold">Cayman 987 (Gen 2 & Gen 1)</h3>
           <p class="mt-2 text-sm text-neutral-300">Pricing mirrors Boxster 987 Gen 2/Gen 1.</p>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
@@ -397,7 +391,7 @@
         </section>
 
         <!-- Macan / S -->
-        <section class="price-section" data-model="macan">
+        <section class="price-section hidden" data-model="macan">
           <h3 class="text-2xl font-bold">Macan / S (2014–2023)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -418,7 +412,7 @@
         </section>
 
         <!-- Macan Diesel -->
-        <section class="price-section" data-model="macan-diesel">
+        <section class="price-section hidden" data-model="macan-diesel">
           <h3 class="text-2xl font-bold">Macan Diesel (2014–2018)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -437,7 +431,7 @@
         </section>
 
         <!-- Macan Turbo / GTS -->
-        <section class="price-section" data-model="macan-turbo">
+        <section class="price-section hidden" data-model="macan-turbo">
           <h3 class="text-2xl font-bold">Macan Turbo / GTS (2014–2023)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -457,13 +451,13 @@
         </section>
 
         <!-- Panamera -->
-        <section class="price-section" data-model="panamera">
+        <section class="price-section hidden" data-model="panamera">
           <h3 class="text-2xl font-bold">Panamera</h3>
           <p class="mt-2 text-sm text-neutral-300">No items found (price list currently empty on source).</p>
         </section>
 
         <!-- Cayenne V6 -->
-        <section class="price-section" data-model="cayenne-v6">
+        <section class="price-section hidden" data-model="cayenne-v6">
           <h3 class="text-2xl font-bold">Cayenne V6 (958 E2) (2010–2017)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -482,7 +476,7 @@
         </section>
 
         <!-- Cayenne Diesel V6 -->
-        <section class="price-section" data-model="cayenne-diesel">
+        <section class="price-section hidden" data-model="cayenne-diesel">
           <h3 class="text-2xl font-bold">Cayenne Diesel V6 (958 E2) (2010–2017)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -501,7 +495,7 @@
         </section>
 
         <!-- Cayenne / S / GTS -->
-        <section class="price-section" data-model="cayenne-gts">
+        <section class="price-section hidden" data-model="cayenne-gts">
           <h3 class="text-2xl font-bold">Cayenne / S / GTS (958 E2) (2010–2017)</h3>
           <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">
             <table class="min-w-full table-auto text-sm">
@@ -568,12 +562,18 @@
     </div>
   </section>
 
-  <!-- Filter & Cookie Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
     (function () {
-      const select = document.getElementById('carSelect');
+      const input = document.getElementById('carInput');
+      const datalist = document.getElementById('carOptions');
+      const showAllBtn = document.getElementById('showAllBtn');
       const note = document.getElementById('filterNote').querySelector('span');
       const sections = Array.from(document.querySelectorAll('.price-section'));
+
+      const options = Array.from(datalist.options);
+      const labelToCode = Object.fromEntries(options.map(o => [o.value, o.dataset.value]));
+      const codeToLabel = Object.fromEntries(options.map(o => [o.dataset.value, o.value]));
 
       function setCookie(name, value, days) {
         const maxAge = days * 24 * 60 * 60;
@@ -585,9 +585,8 @@
         return document.cookie.split(';').map(c => c.trim()).find(c => c.startsWith(target))?.slice(target.length) || null;
       }
 
-      function humanLabel(val) {
-        const opt = select.querySelector(`option[value="${val}"]`);
-        return opt ? opt.textContent : 'All models';
+      function humanLabel(code) {
+        return codeToLabel[code] || 'All models';
       }
 
       function matchesModel(section, value) {
@@ -597,29 +596,60 @@
         return primary === value || alias === value;
       }
 
+      function showSection(sec) {
+        sec.classList.remove('hidden');
+        gsap.fromTo(sec, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4 });
+      }
+
+      function hideSection(sec) {
+        gsap.to(sec, { opacity: 0, y: -20, duration: 0.3, onComplete: () => sec.classList.add('hidden') });
+      }
+
       function applyFilter(value) {
+        if (!value) {
+          sections.forEach(sec => {
+            if (!sec.classList.contains('hidden')) hideSection(sec);
+          });
+          note.textContent = 'None';
+          return;
+        }
         sections.forEach(sec => {
           const show = matchesModel(sec, value);
-          sec.classList.toggle('hidden', !show);
+          if (show && sec.classList.contains('hidden')) {
+            showSection(sec);
+          } else if (!show && !sec.classList.contains('hidden')) {
+            hideSection(sec);
+          }
         });
         note.textContent = value === 'all' ? 'All models' : humanLabel(value);
       }
 
       // Initialise from cookie
       const saved = getCookie('selectedCar');
-      if (saved && select.querySelector(`option[value="${saved}"]`)) {
-        select.value = saved;
+      if (saved && codeToLabel[saved]) {
+        input.value = codeToLabel[saved];
+        applyFilter(saved);
+      } else {
+        note.textContent = 'None';
       }
-      applyFilter(select.value);
 
       // Listen for changes
-      select.addEventListener('change', () => {
-        const val = select.value;
-        setCookie('selectedCar', val, 30); // remember for 30 days
-        applyFilter(val);
-        // smooth scroll to first visible section for context
-        const firstVisible = sections.find(s => !s.classList.contains('hidden'));
-        if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      input.addEventListener('change', () => {
+        const code = labelToCode[input.value];
+        if (code) {
+          setCookie('selectedCar', code, 30);
+          applyFilter(code);
+          const firstVisible = sections.find(s => !s.classList.contains('hidden'));
+          if (firstVisible) firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          applyFilter(null);
+        }
+      });
+
+      showAllBtn.addEventListener('click', () => {
+        input.value = codeToLabel['all'];
+        setCookie('selectedCar', 'all', 30);
+        applyFilter('all');
       });
     })();
   </script>
