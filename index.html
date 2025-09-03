@@ -30,16 +30,42 @@
       <a href="#home" class="font-extrabold tracking-tight text-xl">RD9 Automotive</a>
       <nav aria-label="Primary" class="hidden md:block">
         <ul class="flex gap-8 text-sm">
-          <li><a class="hover:opacity-80" href="#services">Services & Prices</a></li>
+          <li><a class="hover:opacity-80" href="#services">Services</a></li>
+          <li><a class="hover:opacity-80" href="#prices">Prices</a></li>
           <li><a class="hover:opacity-80" href="#about">About</a></li>
           <li><a class="hover:opacity-80" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-3 py-2 text-sm font-medium hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">
-        Book / Enquire
-      </a>
+      <div class="flex items-center gap-4">
+        <button id="menuOpen" class="md:hidden p-2" aria-label="Open menu">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-3 py-2 text-sm font-medium hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">
+          Book / Enquire
+        </a>
+      </div>
     </div>
   </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+    <div id="menuOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <nav id="menuPanel" class="absolute top-0 right-0 h-full w-3/5 max-w-xs bg-neutral-950 p-6 transform translate-x-full transition-transform duration-300">
+      <button id="menuClose" class="absolute top-4 right-4 p-2" aria-label="Close menu">
+        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <ul class="mt-12 space-y-4 text-lg">
+        <li><a href="#services" class="block hover:opacity-80">Services</a></li>
+        <li><a href="#prices" class="block hover:opacity-80">Prices</a></li>
+        <li><a href="#about" class="block hover:opacity-80">About</a></li>
+        <li><a href="#contact" class="block hover:opacity-80">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- Hero -->
   <section id="home" class="relative">
@@ -56,7 +82,7 @@
           We also offer a Pre-purchase Inspection service to help you find the right car for your next purchase. See our services page for more detail on all the services offered by RD9 Automotive.
         </p>
         <div class="mt-10 flex flex-wrap items-center gap-4">
-          <a href="#services" class="rounded-md bg-white text-neutral-900 px-5 py-3 font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/60">View Services & Prices</a>
+          <a href="#prices" class="rounded-md bg-white text-neutral-900 px-5 py-3 font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/60">View Prices</a>
           <a href="#about" class="px-5 py-3 font-semibold border border-white/20 rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">About RD9</a>
         </div>
       </div>
@@ -97,6 +123,16 @@
           <p class="mt-2 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section id="prices" class="bg-neutral-900/60 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <header class="max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Prices</h2>
+        <p class="mt-3 text-neutral-300">Fixed-price servicing across popular models.</p>
+      </header>
 
       <!-- Car picker -->
       <div class="mt-14">
@@ -130,7 +166,6 @@
             </datalist>
             <button id="showAllBtn" type="button" class="mt-2 text-sm text-neutral-300 underline hover:text-white">Show all</button>
           </div>
-          <p id="filterNote" class="text-sm text-neutral-400">Showing: <span class="font-medium">None</span></p>
           <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
         </div>
       </div>
@@ -573,7 +608,6 @@
       const input = document.getElementById('carInput');
       const datalist = document.getElementById('carOptions');
       const showAllBtn = document.getElementById('showAllBtn');
-      const note = document.getElementById('filterNote').querySelector('span');
       const noResults = document.getElementById('noResults');
       const sections = Array.from(document.querySelectorAll('.price-section'));
       let allVisible = false;
@@ -618,7 +652,6 @@
           sections.forEach(sec => {
             if (!sec.classList.contains('hidden')) hideSection(sec);
           });
-          note.textContent = 'None';
           return;
         }
         sections.forEach(sec => {
@@ -629,7 +662,6 @@
             hideSection(sec);
           }
         });
-        note.textContent = value === 'all' ? 'All models' : humanLabel(value);
       }
 
       // Initialise from cookie
@@ -641,8 +673,6 @@
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
         }
-      } else {
-        note.textContent = 'None';
       }
 
       // Clear on focus
@@ -685,6 +715,33 @@
           allVisible = false;
         }
       });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const openBtn = document.getElementById('menuOpen');
+      const closeBtn = document.getElementById('menuClose');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuPanel = document.getElementById('menuPanel');
+      const overlay = document.getElementById('menuOverlay');
+
+      function openMenu() {
+        mobileMenu.classList.remove('hidden');
+        requestAnimationFrame(() => menuPanel.classList.remove('translate-x-full'));
+        openBtn.classList.add('hidden');
+      }
+
+      function closeMenu() {
+        menuPanel.classList.add('translate-x-full');
+        menuPanel.addEventListener('transitionend', () => mobileMenu.classList.add('hidden'), { once: true });
+        openBtn.classList.remove('hidden');
+      }
+
+      openBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
     })();
   </script>
 </body>
