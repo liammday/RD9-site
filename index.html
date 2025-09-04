@@ -24,11 +24,11 @@
     .price-section th, .price-section td { width:33.333%; }
     .vh-100 { height:100vh; height:100dvh; }
     .min-vh-100 { min-height:100vh; min-height:100dvh; }
-    :root { --brand: rgb(255,215,0); }
+    :root { --brand-rgb: 255,215,0; --brand: rgb(var(--brand-rgb)); }
     .text-brand { color: var(--brand); }
     .bg-brand { background-color: var(--brand); }
     nav a:hover { color: var(--brand); }
-    .active-link { text-decoration: underline; text-decoration-color: var(--brand); text-underline-offset: 4px; }
+    .active-link { text-decoration: underline; text-decoration-color: rgba(var(--brand-rgb), var(--active-opacity, 1)); text-underline-offset: 4px; }
     .glint {
       position: relative;
       display: inline-block;
@@ -1138,28 +1138,30 @@
         }
       });
 
-      function setActive(id) {
-        Object.values(linkMap).forEach(links => links.forEach(l => l.classList.remove('active-link')));
-        (linkMap[id] || []).forEach(l => l.classList.add('active-link'));
-      }
-
       const observer = new IntersectionObserver(entries => {
+        const viewport = window.innerHeight || 1;
         entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
+          const id = entry.target.id;
+          const links = linkMap[id] || [];
+          const coverage = entry.intersectionRatio > 0 ? entry.intersectionRect.height / viewport : 0;
+          if (coverage > 0) {
+            links.forEach(l => {
+              l.classList.add('active-link');
+              l.style.setProperty('--active-opacity', coverage.toFixed(2));
+            });
+          } else {
+            links.forEach(l => {
+              l.classList.remove('active-link');
+              l.style.removeProperty('--active-opacity');
+            });
           }
         });
-      }, { rootMargin: '-50% 0px -50% 0px' });
+      }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
 
       Object.keys(linkMap).forEach(id => {
         const section = document.getElementById(id);
         if (section) observer.observe(section);
       });
-
-      if (window.location.hash) {
-        const initial = window.location.hash.slice(1);
-        setActive(initial);
-      }
     })();
   </script>
 </body>
