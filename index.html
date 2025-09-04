@@ -951,6 +951,8 @@
         const detailContent = document.getElementById('serviceContent');
         const header = document.querySelector('header');
         if (!list) return;
+        const gutterItem = list.querySelector('li + li');
+        const gutter = gutterItem ? parseFloat(getComputedStyle(gutterItem).marginTop) : 0;
 
         function isDesktop() {
           return window.matchMedia('(min-width: 1024px)').matches;
@@ -994,7 +996,7 @@
                 details.classList.remove('hidden');
                 btn.classList.add('ring-2', 'ring-white/40');
                 icon && icon.classList.add('rotate-180');
-                const offset = (header ? header.offsetHeight : 0);
+                const offset = (header ? header.offsetHeight : 0) + gutter;
                 const top = parentLi.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top, behavior: 'smooth' });
               } else {
