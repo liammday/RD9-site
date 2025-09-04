@@ -118,7 +118,7 @@
       </header>
 
       <div id="servicesPanel" class="mt-10 lg:flex lg:items-stretch lg:gap-8">
-        <ul id="serviceList" class="space-y-4 lg:w-1/3">
+        <ul id="serviceList" class="space-y-4 lg:space-y-8 lg:w-1/3">
           <li>
             <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="porsche-servicing">
               <img src="icons/porsche-servicing.svg" alt="" class="h-10 w-10 flex-shrink-0" />
@@ -950,11 +950,23 @@
         const list = document.getElementById('serviceList');
         const detailPanel = document.getElementById('serviceDetail');
         const detailContent = document.getElementById('serviceContent');
+        const header = document.querySelector('header');
         if (!list) return;
 
         function isDesktop() {
           return window.matchMedia('(min-width: 1024px)').matches;
         }
+
+        function updatePanelVisibility() {
+          if (isDesktop()) {
+            detailPanel.classList.remove('hidden');
+          } else {
+            detailPanel.classList.add('hidden');
+          }
+        }
+
+        updatePanelVisibility();
+        window.addEventListener('resize', updatePanelVisibility);
 
         function clearActive() {
           list.querySelectorAll('.service-card').forEach(btn => {
@@ -975,7 +987,6 @@
             if (isDesktop()) {
               clearActive();
               btn.classList.add('ring-2', 'ring-white/40');
-              detailPanel.classList.remove('hidden');
               detailContent.innerHTML = details.innerHTML;
             } else {
               if (details.classList.contains('hidden')) {
@@ -984,7 +995,9 @@
                 details.classList.remove('hidden');
                 btn.classList.add('ring-2', 'ring-white/40');
                 icon && icon.classList.add('rotate-180');
-                parentLi.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const offset = (header ? header.offsetHeight : 0);
+                const top = parentLi.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
               } else {
                 details.classList.add('hidden');
                 btn.classList.remove('ring-2', 'ring-white/40');
