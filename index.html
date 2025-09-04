@@ -118,32 +118,32 @@
       </header>
 
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/porsche-servicing.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Porsche Servicing</h3>
           <p class="mt-2 text-sm text-neutral-300">We offer a wide range of servicing and repairs… genuine Porsche parts… or the very best of the aftermarket.</p>
         </article>
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/performance.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Performance</h3>
           <p class="mt-2 text-sm text-neutral-300">Unlock the full potential of your vehicle… tuning options… package deal with one of our performance maps.</p>
         </article>
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/prestige.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Prestige</h3>
           <p class="mt-2 text-sm text-neutral-300">We understand that your luxury vehicle demands nothing but the best…</p>
         </article>
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/electric-hybrid.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Electric & Hybrid</h3>
           <p class="mt-2 text-sm text-neutral-300">We offer fully qualified High Voltage technicians…</p>
         </article>
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/wheel-alignment.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Wheel Alignment</h3>
           <p class="mt-2 text-sm text-neutral-300">Suspension alignments are a critical aspect of vehicle maintenance…</p>
         </article>
-        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900">
+        <article class="rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20">
           <img src="icons/pre-purchase.svg" alt="" class="h-10 w-10 mb-4" />
           <h3 class="font-semibold text-lg">Pre-Purchase Inspections</h3>
           <p class="mt-2 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
@@ -820,6 +820,25 @@
           clearSelection();
         }
       });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const section = document.getElementById('services');
+      if (!section) return;
+      const cards = section.querySelectorAll('article');
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          cards.forEach((card, i) => {
+            card.style.animationDelay = `${i * 100}ms`;
+            card.classList.add('animate-rise');
+            card.classList.remove('opacity-0');
+          });
+          observer.disconnect();
+        }
+      }, { threshold: 0.2 });
+      observer.observe(section);
     })();
   </script>
 
