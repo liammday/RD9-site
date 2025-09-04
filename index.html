@@ -23,11 +23,16 @@
     .price-section th, .price-section td { width:33.333%; }
     .vh-100 { height:100vh; height:100lvh; }
     .min-vh-100 { min-height:100vh; min-height:100lvh; }
+    :root { --brand: rgb(255,215,0); }
+    .text-brand { color: var(--brand); }
+    .bg-brand { background-color: var(--brand); }
+    .border-brand { border-color: var(--brand); }
+    nav a:hover { color: var(--brand); }
   </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 antialiased min-vh-100">
   <!-- Header / Nav -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10">
+  <header class="sticky top-0 z-40 backdrop-blur bg-neutral-950/70 border-b border-brand">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center">
         <img src="RD9-simple-white.svg" alt="RD9 Automotive logo" class="h-8 w-auto">
@@ -35,10 +40,10 @@
       </a>
       <nav aria-label="Primary" class="hidden md:block">
         <ul class="flex gap-8 text-sm">
-          <li><a class="hover:opacity-80" href="#services">Services</a></li>
-          <li><a class="hover:opacity-80" href="#prices">Prices</a></li>
-          <li><a class="hover:opacity-80" href="#about">About</a></li>
-          <li><a class="hover:opacity-80" href="#contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="flex items-center gap-4">
@@ -47,7 +52,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-3 py-2 text-sm font-medium hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">
           Book / Enquire
         </a>
       </div>
@@ -64,10 +69,10 @@
         </svg>
       </button>
       <ul class="mt-12 space-y-4 text-lg">
-        <li><a href="#services" class="block hover:opacity-80">Services</a></li>
-        <li><a href="#prices" class="block hover:opacity-80">Prices</a></li>
-        <li><a href="#about" class="block hover:opacity-80">About</a></li>
-        <li><a href="#contact" class="block hover:opacity-80">Contact</a></li>
+        <li><a href="#services" class="block">Services</a></li>
+        <li><a href="#prices" class="block">Prices</a></li>
+        <li><a href="#about" class="block">About</a></li>
+        <li><a href="#contact" class="block">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -77,7 +82,7 @@
     <div class="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-950 to-black"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-36">
       <div class="max-w-3xl animate-rise">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">The Gold Standard</h1>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand">The Gold Standard</h1>
         <p class="mt-6 text-lg text-neutral-300">
           Welcome to RD9 Automotive, Porsche and Prestige vehicle specialists. We feel that, for too long, the motor trade has fallen short, and we are here to change that.
           From a prized possession to your everyday vehicle, we are here to maintain, repair and modify your vehicles to the highest of standards.
@@ -87,18 +92,18 @@
           We also offer a Pre-purchase Inspection service to help you find the right car for your next purchase. See our services page for more detail on all the services offered by RD9 Automotive.
         </p>
         <div class="mt-10 flex flex-wrap items-center gap-4">
-          <a href="#prices" class="rounded-md bg-white text-neutral-900 px-5 py-3 font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/60">View Prices</a>
-          <a href="#about" class="px-5 py-3 font-semibold border border-white/20 rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">About RD9</a>
+          <a href="#prices" class="rounded-md bg-brand text-neutral-900 px-5 py-3 font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/60">View Prices</a>
+          <a href="#about" class="px-5 py-3 font-semibold border border-brand text-brand rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">About RD9</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services — blurbs -->
-  <section id="services" class="bg-neutral-900/60 border-t border-white/10">
+  <section id="services" class="bg-neutral-900/60 border-t border-brand">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <header class="max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Services</h2>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand">Services</h2>
         <p class="mt-3 text-neutral-300">High-end care with main-dealer tooling, delivered with a personal touch.</p>
       </header>
 
@@ -132,10 +137,10 @@
   </section>
 
   <!-- Prices -->
-  <section id="prices" class="bg-neutral-900/60 border-t border-white/10">
+  <section id="prices" class="bg-neutral-900/60 border-t border-brand">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <header class="max-w-3xl">
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Prices</h2>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand">Prices</h2>
         <p class="mt-3 text-neutral-300">Fixed-price servicing across popular models.</p>
       </header>
 
@@ -564,9 +569,9 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="border-t border-white/10 bg-neutral-900/50">
+  <section id="about" class="border-t border-brand bg-neutral-900/50">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand">About</h2>
       <div class="mt-6 max-w-3xl space-y-4 text-neutral-300">
         <p><strong>The Gold Standard</strong><br>RD9 was founded in 2020 by Ryan Day. Ryan started his career at Porsche back in 2007 where he went through his apprenticeship all the way to achieving the gold certification in 2018. Over the last year he’s been venturing into other prestigious manufactures from lotus to Lamborghini. Now his goal is to take what he thinks works from the main dealers and add the personal touch that’s much needed.</p>
       </div>
@@ -574,9 +579,9 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="border-t border-white/10">
+  <section id="contact" class="border-t border-brand">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Contact us</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand">Contact us</h2>
       <div class="mt-8 grid lg:grid-cols-2 gap-10">
         <div>
           <div class="space-y-3 text-neutral-300">
