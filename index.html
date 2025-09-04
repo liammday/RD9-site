@@ -773,7 +773,6 @@
         <div>
           <form id="contactForm" class="rounded-lg border border-white/10 p-6 bg-neutral-900" aria-label="Enquiry form">
             <div id="contactFields" class="space-y-4">
-              <p class="text-sm text-neutral-400">Fields marked * are required.</p>
               <div>
                 <label for="name" class="block text-sm font-medium">Name</label>
                 <input id="name" name="name" type="text" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
@@ -794,7 +793,10 @@
                 <label for="message" class="block text-sm font-medium">Message</label>
                 <textarea id="message" name="message" rows="4" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30"></textarea>
               </div>
-              <button type="submit" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Send</button>
+              <div class="flex flex-wrap items-center gap-2">
+                <button type="submit" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Send</button>
+                <p class="text-sm text-neutral-400">Fields marked * are required.</p>
+              </div>
             </div>
             <div id="contactSuccess" class="hidden space-y-4">
               <p class="text-sm text-neutral-300">Continue in your mail client to send your message. Thanks for contacting us!</p>
