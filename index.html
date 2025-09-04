@@ -28,6 +28,7 @@
     .text-brand { color: var(--brand); }
     .bg-brand { background-color: var(--brand); }
     nav a:hover { color: var(--brand); }
+    .active-link { text-decoration: underline; text-decoration-color: var(--brand); text-underline-offset: 4px; }
     .glint {
       position: relative;
       display: inline-block;
@@ -1082,6 +1083,41 @@
       closeBtn.addEventListener('click', closeMenu);
       overlay.addEventListener('click', closeMenu);
       mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    })();
+  </script>
+  <script>
+    (function () {
+      const linkMap = {};
+      document.querySelectorAll('header nav a, #menuPanel a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const id = href.slice(1);
+          (linkMap[id] ||= []).push(link);
+        }
+      });
+
+      function setActive(id) {
+        Object.values(linkMap).forEach(links => links.forEach(l => l.classList.remove('active-link')));
+        (linkMap[id] || []).forEach(l => l.classList.add('active-link'));
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      }, { rootMargin: '-50% 0px -50% 0px' });
+
+      Object.keys(linkMap).forEach(id => {
+        const section = document.getElementById(id);
+        if (section) observer.observe(section);
+      });
+
+      if (window.location.hash) {
+        const initial = window.location.hash.slice(1);
+        setActive(initial);
+      }
     })();
   </script>
 </body>
