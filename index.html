@@ -31,9 +31,10 @@
     .active-link { text-decoration: underline; text-decoration-color: rgba(var(--brand-rgb), var(--active-opacity, 1)); text-underline-offset: 4px; }
     .glint {
       position: relative;
-      display: inline-block;
+      display: inline;
       overflow: hidden;
       text-shadow: 0 0 4px rgba(255,215,0,0.3);
+      line-height: inherit;
     }
     .glint::after {
       content: attr(data-text);
