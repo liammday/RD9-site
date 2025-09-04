@@ -81,6 +81,52 @@
       background-color: rgb(23 23 23);
       color: rgb(245 245 245);
     }
+
+    .footer-credit {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      line-height: 1;
+      background-color: #000;
+      color: transparent;
+    }
+
+    .footer-credit::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(90deg,#8b5cf6,#3b82f6,#8b5cf6);
+      background-size: 200% 200%;
+      animation: gradientShift 8s ease infinite;
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .footer-credit span {
+      background: linear-gradient(90deg,#8b5cf6,#3b82f6,#8b5cf6);
+      background-size: 200% 200%;
+      animation: gradientShift 8s ease infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
   </style>
 </head>
 <body id="home" class="bg-neutral-950 text-neutral-100 antialiased min-vh-100 pt-16" style="padding-top: calc(env(safe-area-inset-top) + 4rem);">
@@ -811,7 +857,7 @@
           </form>
         </div>
       </div>
-        <div class="mt-12 flex flex-col items-center justify-between gap-4 text-xs text-neutral-500 sm:flex-row">
+        <footer class="mt-12 flex flex-col items-center justify-between gap-4 text-xs text-neutral-500 sm:flex-row">
           <div class="flex items-center gap-2">
             <img src="RD9-simple-white.svg" alt="RD9 Automotive logo" class="h-6 w-auto">
             <span>© RD9 2024.</span>
@@ -833,7 +879,8 @@
               </svg>
             </a>
           </div>
-        </div>
+          <a href="https://www.liamday.co.uk" target="_blank" rel="noopener" class="footer-credit"><span>Built by www.liamday.co.uk</span></a>
+        </footer>
       </div>
     </section>
 
