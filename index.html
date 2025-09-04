@@ -117,65 +117,77 @@
         <p class="mt-3 text-neutral-300">High-end care with main-dealer tooling, delivered with a personal touch.</p>
       </header>
 
-      <div id="servicesPanel" class="mt-10 lg:flex lg:gap-8">
+      <div id="servicesPanel" class="mt-10 lg:flex lg:items-stretch lg:gap-8">
         <ul id="serviceList" class="space-y-4 lg:w-1/3">
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="porsche-servicing">
-              <img src="icons/porsche-servicing.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Porsche Servicing</h3>
-              <p class="mt-2 text-sm text-neutral-300">We offer a wide range of servicing and repairs… genuine Porsche parts… or the very best of the aftermarket.</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="porsche-servicing">
+              <img src="icons/porsche-servicing.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Porsche Servicing</h3>
+                <p class="mt-1 text-sm text-neutral-300">We offer a wide range of servicing and repairs… genuine Porsche parts… or the very best of the aftermarket.</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>We offer a wide range of servicing and repairs using genuine Porsche parts or the very best aftermarket alternatives. All work is carried out to factory standards by our experienced technicians.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="performance">
-              <img src="icons/performance.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Performance</h3>
-              <p class="mt-2 text-sm text-neutral-300">Unlock the full potential of your vehicle… tuning options… package deal with one of our performance maps.</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="performance">
+              <img src="icons/performance.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Performance</h3>
+                <p class="mt-1 text-sm text-neutral-300">Unlock the full potential of your vehicle… tuning options… package deal with one of our performance maps.</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>Unlock the full potential of your vehicle with tailored tuning options. From hardware upgrades to custom ECU maps, we can build a package to meet your goals.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="prestige">
-              <img src="icons/prestige.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Prestige</h3>
-              <p class="mt-2 text-sm text-neutral-300">We understand that your luxury vehicle demands nothing but the best…</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="prestige">
+              <img src="icons/prestige.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Prestige</h3>
+                <p class="mt-1 text-sm text-neutral-300">We understand that your luxury vehicle demands nothing but the best…</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>Our technicians know that luxury vehicles demand meticulous care. From routine maintenance to complex diagnostics, we handle high-end marques with the respect they deserve.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="electric-hybrid">
-              <img src="icons/electric-hybrid.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Electric &amp; Hybrid</h3>
-              <p class="mt-2 text-sm text-neutral-300">We offer fully qualified High Voltage technicians…</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="electric-hybrid">
+              <img src="icons/electric-hybrid.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Electric &amp; Hybrid</h3>
+                <p class="mt-1 text-sm text-neutral-300">We offer fully qualified High Voltage technicians…</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>We provide fully qualified high-voltage technicians for EV and hybrid maintenance. Whether it is a routine battery health check or component replacement, you're in safe hands.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="wheel-alignment">
-              <img src="icons/wheel-alignment.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Wheel Alignment</h3>
-              <p class="mt-2 text-sm text-neutral-300">Suspension alignments are a critical aspect of vehicle maintenance…</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="wheel-alignment">
+              <img src="icons/wheel-alignment.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Wheel Alignment</h3>
+                <p class="mt-1 text-sm text-neutral-300">Suspension alignments are a critical aspect of vehicle maintenance…</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>Suspension alignments are a critical aspect of vehicle maintenance. Our precision equipment ensures your car tracks true and performs at its best.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full text-left rounded-lg border border-white/10 p-6 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="pre-purchase-inspections">
-              <img src="icons/pre-purchase.svg" alt="" class="h-10 w-10 mb-4" />
-              <h3 class="font-semibold text-lg">Pre-Purchase Inspections</h3>
-              <p class="mt-2 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
-              <svg class="chevron absolute top-6 right-6 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="pre-purchase-inspections">
+              <img src="icons/pre-purchase.svg" alt="" class="h-10 w-10 flex-shrink-0" />
+              <div class="flex-1">
+                <h3 class="font-semibold text-lg">Pre-Purchase Inspections</h3>
+                <p class="mt-1 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
+              </div>
+              <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>A pre-purchase inspection gives you a deeper understanding of a vehicle before you commit. We'll highlight issues and maintenance items so you can buy with confidence.</p></div>
           </li>
         </ul>
-        <div id="serviceDetail" class="mt-6 hidden lg:block lg:w-2/3">
-          <div id="serviceContent" class="p-6 rounded-lg border border-white/10 bg-neutral-900 text-neutral-200">
+        <div id="serviceDetail" class="mt-6 hidden lg:block lg:w-2/3 lg:mt-0">
+          <div id="serviceContent" class="p-6 h-full rounded-lg border border-white/10 bg-neutral-900 text-neutral-200">
             <p>Select a service to learn more.</p>
           </div>
         </div>
