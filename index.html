@@ -141,12 +141,15 @@
 
       <!-- Car picker -->
       <div class="mt-14">
-        <div class="flex flex-col items-center gap-4 text-center">
-          <div class="w-full sm:w-auto">
-            <label for="carInput" class="block text-sm font-medium text-neutral-200 text-center">Filter price list by your car</label>
+        <div class="flex flex-col gap-2">
+          <label for="carInput" class="block text-sm font-medium text-neutral-200">Filter price list by your car</label>
+          <div class="relative">
             <input id="carInput" list="carOptions" name="carInput" placeholder="Start typing model..."
-                   class="mt-2 w-full sm:w-96 rounded-md bg-neutral-900 border border-white/20 px-4 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-white/40" />
-            <datalist id="carOptions">
+                   class="mt-1 w-full rounded-md bg-neutral-900 border border-white/20 px-4 py-3 pr-10 text-lg font-semibold focus:outline-none" />
+            <button id="clearCar" type="button" aria-label="Clear selection"
+                    class="absolute inset-y-0 right-0 px-3 text-neutral-400 hover:text-white hidden">&times;</button>
+          </div>
+          <datalist id="carOptions">
               <option data-value="all" value="All models"></option>
               <option data-value="911-992" value="911 (992)"></option>
               <option data-value="911-991" value="911 (991)"></option>
@@ -169,8 +172,7 @@
               <option data-value="cayenne-diesel" value="Cayenne Diesel V6 (958 E2)"></option>
               <option data-value="cayenne-gts" value="Cayenne / S / GTS (958 E2)"></option>
             </datalist>
-            <button id="showAllBtn" type="button" class="mt-2 text-sm text-neutral-300 underline hover:text-white">Show all</button>
-          </div>
+          <button id="showAllBtn" type="button" class="mt-2 self-end text-sm text-neutral-300 underline hover:text-white">Show all</button>
           <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
         </div>
       </div>
@@ -615,6 +617,7 @@
   <script>
     (function () {
       const input = document.getElementById('carInput');
+      const clearBtn = document.getElementById('clearCar');
       const datalist = document.getElementById('carOptions');
       const showAllBtn = document.getElementById('showAllBtn');
       const noResults = document.getElementById('noResults');
@@ -673,24 +676,40 @@
         });
       }
 
+      function updateClear() {
+        clearBtn.classList.toggle('hidden', input.value === '');
+      }
+
+      function clearSelection() {
+        input.value = '';
+        setCookie('selectedCar', '', -1);
+        applyFilter(null);
+        showAllBtn.textContent = 'Show all';
+        allVisible = false;
+        input.classList.remove('ring-2', 'ring-white/40');
+        updateClear();
+      }
+
       // Initialise from cookie
       const saved = getCookie('selectedCar');
       if (saved && codeToLabel[saved]) {
         input.value = codeToLabel[saved];
         applyFilter(saved);
+        input.classList.add('ring-2', 'ring-white/40');
+        updateClear();
         if (saved === 'all') {
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
         }
       }
 
-      // Clear on focus
-      input.addEventListener('focus', () => {
-        input.value = '';
-        setCookie('selectedCar', '', -1);
-        applyFilter(null);
-        showAllBtn.textContent = 'Show all';
-        allVisible = false;
+      clearBtn.addEventListener('click', clearSelection);
+
+      input.addEventListener('input', () => {
+        updateClear();
+        if (input.value === '') {
+          input.classList.remove('ring-2', 'ring-white/40');
+        }
       });
 
       // Listen for changes
@@ -701,11 +720,13 @@
           applyFilter(code);
           showAllBtn.textContent = 'Show all';
           allVisible = false;
+          input.classList.add('ring-2', 'ring-white/40');
         } else {
           applyFilter(null);
           noResults.classList.remove('hidden');
           showAllBtn.textContent = 'Show all';
           allVisible = false;
+          input.classList.remove('ring-2', 'ring-white/40');
         }
       });
 
@@ -716,12 +737,10 @@
           applyFilter('all');
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
+          input.classList.add('ring-2', 'ring-white/40');
+          updateClear();
         } else {
-          input.value = '';
-          setCookie('selectedCar', '', -1);
-          applyFilter(null);
-          showAllBtn.textContent = 'Show all';
-          allVisible = false;
+          clearSelection();
         }
       });
     })();
