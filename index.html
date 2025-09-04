@@ -301,7 +301,7 @@
           </li>
         </ul>
         <div id="serviceDetail" class="mt-6 hidden opacity-0 lg:block lg:w-2/3 lg:mt-0">
-          <div id="serviceContent" class="p-6 h-full rounded-lg border border-white/10 bg-neutral-900 text-neutral-200">
+          <div id="serviceContent" class="p-6 h-full rounded-lg border border-white/10 bg-neutral-900 text-neutral-200 transition-opacity duration-300">
             <p>Select a service to learn more.</p>
           </div>
         </div>
@@ -1098,6 +1098,36 @@
           list.querySelectorAll('.chevron').forEach(i => i.classList.remove('rotate-180'));
         }
 
+        let animating = false;
+        let pendingHtml = null;
+
+        function swapContent(html) {
+          if (animating) {
+            pendingHtml = html;
+            return;
+          }
+          animating = true;
+          detailContent.classList.add('opacity-0');
+          detailContent.addEventListener('transitionend', function handleFadeOut(e) {
+            if (e.target !== detailContent) return;
+            detailContent.removeEventListener('transitionend', handleFadeOut);
+            detailContent.innerHTML = html;
+            requestAnimationFrame(() => {
+              detailContent.classList.remove('opacity-0');
+            });
+            detailContent.addEventListener('transitionend', function handleFadeIn(ev) {
+              if (ev.target !== detailContent) return;
+              detailContent.removeEventListener('transitionend', handleFadeIn);
+              animating = false;
+              if (pendingHtml !== null) {
+                const next = pendingHtml;
+                pendingHtml = null;
+                swapContent(next);
+              }
+            }, { once: true });
+          }, { once: true });
+        }
+
         list.querySelectorAll('.service-card').forEach(btn => {
           btn.addEventListener('click', () => {
             const parentLi = btn.parentElement;
@@ -1106,7 +1136,7 @@
             if (isDesktop()) {
               clearActive();
               btn.classList.add('ring-2', 'ring-white/40');
-              detailContent.innerHTML = details.innerHTML;
+              swapContent(details.innerHTML);
             } else {
               if (details.classList.contains('hidden')) {
                 closeDetails();
