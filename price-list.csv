@@ -1,0 +1,111 @@
+Model,Job,Interval,Price
+911 (992),Minor Service,20k miles / 2 years,£345
+911 (992),Major Service,40k miles / 4 years,£465
+911 (992),Spark Plugs,40k miles / 4 years,£225
+911 (992),Air Filter,"24k / 4y, 40k / 4y, 60k / 6y",POA
+911 (992),Aux Belt,"48k / 4y, 60k / 6y",POA
+911 (992),Brake Fluid Change,Every 2 years,£75
+911 (992) - 992 Turbo / Turbo S (2020–2022),Minor Service,20k miles / 2 years,£345
+911 (992) - 992 Turbo / Turbo S (2020–2022),Major Service,40k miles / 4 years,£465
+911 (992) - 992 Turbo / Turbo S (2020–2022),Spark Plugs,40k miles / 4 years,£360
+911 (992) - 992 Turbo / Turbo S (2020–2022),Brake Fluid Change,Every 2 years,£75
+911 (992) - 992 GT3 / GT3 RS (2021–2022),Minor Service,20k miles / 2 years,£345
+911 (992) - 992 GT3 / GT3 RS (2021–2022),Major Service,40k miles / 4 years,£465
+911 (992) - 992 GT3 / GT3 RS (2021–2022),Spark Plugs,40k miles / 4 years,£255
+911 (992) - 992 GT3 / GT3 RS (2021–2022),Brake Fluid Change,Every 2 years,£75
+911 (991),Minor Service,Every 2 years,£395
+911 (991),Major Service,Every 4 years,£470
+911 (991),Spark Plugs,40k miles / 4 years,£295
+911 (991),Air Filter,"24k / 4y, 40k / 4y, 60k / 6y",POA
+911 (991),Aux Belt,"48k / 4y, 60k / 6y",POA
+911 (991),Brake Fluid Change,Every 2 years,£75 / £95
+911 (997),Minor Service,Every 2 years,£350
+911 (997),Major Service,Every 4 years,£440
+911 (997),Spark Plugs,60k miles / 4 years,£225
+911 (997),Air Filter,—,POA
+911 (997),Aux Belt,60k / 6y,£135
+911 (997),Manual Gearbox Oil,120k miles / 12 years,£95
+911 (997),Tip Gearbox Oil,—,£315
+911 (997),Brake Fluid Change,Every 2 years,£95
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Minor Service,Every 2 years,£370
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Major Service (includes plugs & filters),Every 4 years,£895
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Aux Belt,—,£175
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Manual Gearbox Oil,—,£95
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Tip Gearbox Oil,—,£315
+911 (997) - 997 Turbo / GT2 (Gen 1) (2005–2008),Brake Fluid Change,Every 2 years,£95
+911 (996),Air Filter,,£52
+911 (996),Aux Belt,,£149
+911 (996),Brake Fluid Change,,£95
+Boxster 718 (2017–2022),Minor Service,20k miles / 2 years,£395
+Boxster 718 (2017–2022),Major Service,40k miles / 4 years,£470
+Boxster 718 (2017–2022),Spark Plugs (4-cyl),40k miles / 6 years,£185
+Boxster 718 (2017–2022),Spark Plugs (6-cyl),40k miles / 6 years,£215
+Boxster 718 (2017–2022),Aux Belt,60k miles / 6 years,£160
+Boxster 718 (2017–2022),Air Filter,"24k/4y, 40k/4y, 60k/6y",POA
+Boxster 718 (2017–2022),Brake Fluid Change,Every 2 years,£95
+Boxster 981 (2013–2016),Minor Service,20k miles / 2 years,£395
+Boxster 981 (2013–2016),Major Service,40k miles / 4 years,£470
+Boxster 981 (2013–2016),Spark Plugs,40k miles / 4 years,£225
+Boxster 981 (2013–2016),Aux Belt,60k miles / 6 years,£165
+Boxster 981 (2013–2016),Air Filter,"24k/4y, 40k/4y, 60k/6y",POA
+Boxster 981 (2013–2016),Brake Fluid Change,Every 2 years,£95
+Boxster 987 (Gen 2) (2009–2012),Minor Service,20k miles / 2 years,£370
+Boxster 987 (Gen 2) (2009–2012),Major Service,40k miles / 4 years,£455
+Boxster 987 (Gen 2) (2009–2012),Spark Plugs,40k miles / 4 years,£200
+Boxster 987 (Gen 2) (2009–2012),Aux Belt,60k miles / 6 years,£140
+Boxster 987 (Gen 2) (2009–2012),Brake Fluid Change,Every 2 years,£95
+Boxster 987 (Gen 1) (2005–2008),Minor Service,20k miles / 2 years,£350
+Boxster 987 (Gen 1) (2005–2008),Major Service,40k miles / 4 years,£440
+Boxster 987 (Gen 1) (2005–2008),Spark Plugs,60k miles / 4 years,£195
+Boxster 987 (Gen 1) (2005–2008),Aux Belt,60k miles / 6 years,£140
+Boxster 987 (Gen 1) (2005–2008),Brake Fluid Change,Every 2 years,£95
+Boxster 986 (1998–2004),Minor Service,12k miles / 2 years,£325
+Boxster 986 (1998–2004),Major Service,24k miles / 4 years,£420
+Boxster 986 (1998–2004),Maintenance,Every 12 months,£95
+Boxster 986 (1998–2004),Spark Plugs,48k miles / 4 years,£175
+Boxster 986 (1998–2004),Brake Fluid Change,Every 2 years,£95
+Cayman 718 / 981,Minor Service,20k miles / 2 years,£395
+Cayman 718 / 981,Major Service,40k miles / 4 years,£470
+Cayman 718 / 981,Spark Plugs (4-cyl),40k miles / 6 years,£185
+Cayman 718 / 981,Spark Plugs (6-cyl),40k miles / 6 years,£215
+Cayman 718 / 981,Aux Belt,60k miles / 6 years,£160 / £165
+Cayman 718 / 981,Brake Fluid Change,Every 2 years,£95
+Cayman 987 (Gen 2 & Gen 1),Minor Service,20k miles / 2 years,£370 / £350
+Cayman 987 (Gen 2 & Gen 1),Major Service,40k miles / 4 years,£455 / £440
+Cayman 987 (Gen 2 & Gen 1),Spark Plugs,40k–60k miles / 4–6 years,£200 / £195
+Cayman 987 (Gen 2 & Gen 1),Aux Belt,60k miles / 6 years,£140
+Cayman 987 (Gen 2 & Gen 1),Brake Fluid Change,Every 2 years,£95
+Macan / S (2014–2023),Oil Service,Timeline variable,£250
+Macan / S (2014–2023),Minor Service,20k miles / 2 years,£400
+Macan / S (2014–2023),Major Service,40k miles / 4 years,£485
+Macan / S (2014–2023),Spark Plugs (4-cyl),40k miles / 6 years,£190
+Macan / S (2014–2023),Spark Plugs (6-cyl),40k miles / 6 years,£210
+Macan / S (2014–2023),PDK Oil,40k miles / 6 years,£290
+Macan / S (2014–2023),Brake Fluid Change,Every 2 years,£95
+Macan Diesel (2014–2018),Oil Service,Timeline variable,£250
+Macan Diesel (2014–2018),Minor Service,20k miles / 2 years,£400
+Macan Diesel (2014–2018),Major Service,40k miles / 4 years,£485
+Macan Diesel (2014–2018),PDK Oil,40k miles / 6 years,£290
+Macan Diesel (2014–2018),Brake Fluid Change,Every 2 years,£95
+Macan Turbo / GTS (2014–2023),Oil Service,Timeline variable,£250
+Macan Turbo / GTS (2014–2023),Minor Service,20k miles / 2 years,£400
+Macan Turbo / GTS (2014–2023),Major Service,40k miles / 4 years,£485
+Macan Turbo / GTS (2014–2023),Spark Plugs,40k miles / 6 years,£210
+Macan Turbo / GTS (2014–2023),PDK Oil,40k miles / 6 years,£290
+Macan Turbo / GTS (2014–2023),Brake Fluid Change,Every 2 years,£95
+Panamera,No items found,,
+Cayenne V6 (958 E2) (2010–2017),Oil Service,Timeline variable,£225
+Cayenne V6 (958 E2) (2010–2017),Minor Service,20k miles / 2 years,£265
+Cayenne V6 (958 E2) (2010–2017),Major Service,40k miles / 4 years,£325
+Cayenne V6 (958 E2) (2010–2017),Brake Fluid Change,Every 2 years,£75
+Cayenne V6 (958 E2) (2010–2017),Air Filter / Aux Belt,Various,POA
+Cayenne Diesel V6 (958 E2) (2010–2017),Oil Service,Timeline variable,£225
+Cayenne Diesel V6 (958 E2) (2010–2017),Minor Service,20k miles / 2 years,£265
+Cayenne Diesel V6 (958 E2) (2010–2017),Major Service,40k miles / 4 years,£395
+Cayenne Diesel V6 (958 E2) (2010–2017),Brake Fluid Change,Every 2 years,£75
+Cayenne Diesel V6 (958 E2) (2010–2017),Air Filter / Aux Belt,Various,POA
+Cayenne / S / GTS (958 E2) (2010–2017),Oil Service,Timeline variable,£225
+Cayenne / S / GTS (958 E2) (2010–2017),Minor Service,20k miles / 2 years,£265
+Cayenne / S / GTS (958 E2) (2010–2017),Major Service,40k miles / 4 years,£325
+Cayenne / S / GTS (958 E2) (2010–2017),Brake Fluid Change,Every 2 years,£75
+Cayenne / S / GTS (958 E2) (2010–2017),Air Filter / Aux Belt,Various,POA
