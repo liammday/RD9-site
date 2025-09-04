@@ -13,7 +13,6 @@
     @media (prefers-reduced-motion: reduce) {
       .animate-fade { animation: none !important; }
       .animate-rise { animation: none !important; }
-      .glint::after { animation: none !important; }
       html { scroll-behavior: auto; }
     }
     @keyframes fade { from {opacity: 0} to {opacity:1} }
@@ -30,45 +29,10 @@
     nav a { text-decoration-color: white; transition: color 150ms ease, text-decoration-color 150ms ease; }
     nav a:hover { color: var(--brand); text-decoration: underline; text-decoration-color: var(--brand); }
     .active-link { text-decoration: underline; text-decoration-color: white; text-underline-offset: 4px; }
-    .glint {
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-      text-shadow: 0 0 4px rgba(255,215,0,0.3);
-      line-height: inherit;
-    }
-    .glint::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font: inherit;
-      letter-spacing: inherit;
-      line-height: inherit;
-      color: transparent;
-      -webkit-text-stroke: 2px rgba(255,255,255,0.8);
-      mask-image: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.8) 50%, transparent 60%);
-      -webkit-mask-image: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.8) 50%, transparent 60%);
-      mask-size: 200% 100%;
-      -webkit-mask-size: 200% 100%;
-      mask-repeat: no-repeat;
-      -webkit-mask-repeat: no-repeat;
-      mask-position: -100% 0;
-      -webkit-mask-position: -100% 0;
-      pointer-events: none;
-      animation: glint 4s ease-in-out infinite;
-    }
-    @keyframes glint {
-      from {
-        mask-position: -100% 0;
-        -webkit-mask-position: -100% 0;
-      }
-      to {
-        mask-position: 100% 0;
-        -webkit-mask-position: 100% 0;
-      }
+    .glint-svg {
+      height: 1em;
+      width: auto;
+      overflow: visible;
     }
     #home, section { scroll-margin-top: calc(env(safe-area-inset-top) + 4rem); }
     /* Style car model datalist dropdown on desktop */
@@ -182,7 +146,27 @@
     <div class="absolute inset-0 opacity-20 bg-[url('tyre-tread.svg')] bg-repeat pointer-events-none"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-28 lg:py-36">
       <div class="max-w-3xl animate-rise">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white"><span class="inline-block relative top-px">The&nbsp;</span><span class="text-brand glint inline-block" data-text="Gold">Gold&nbsp;</span><span class="inline-block relative top-px">Standard</span></h1>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+          <span class="inline-block relative top-px">The&nbsp;</span>
+          <span class="sr-only">Gold </span>
+          <svg class="glint-svg inline-block text-brand" viewBox="0 0 120 32" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="glint-gradient" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#fff" stop-opacity="0" />
+                <stop offset="50%" stop-color="#fff" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+              </linearGradient>
+              <mask id="glint-mask">
+                <rect x="-60" y="0" width="60" height="32" fill="url(#glint-gradient)">
+                  <animate attributeName="x" from="-60" to="120" dur="4s" repeatCount="indefinite" />
+                </rect>
+              </mask>
+            </defs>
+            <text x="0" y="24" style="font: inherit; fill: currentColor;">Gold</text>
+            <text x="0" y="24" style="font: inherit; fill: #fff;" mask="url(#glint-mask)">Gold</text>
+          </svg>&nbsp;
+          <span class="inline-block relative top-px">Standard</span>
+        </h1>
         <p class="mt-6 text-lg text-neutral-300">
           Welcome to RD9 Automotive, Porsche and Prestige vehicle specialists. We feel that, for too long, the motor trade has fallen short, and we are here to change that.
           From a prized possession to your everyday vehicle, we are here to maintain, repair and modify your vehicles to the highest of standards.
