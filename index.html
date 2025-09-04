@@ -608,29 +608,38 @@
           </div>
         </div>
         <div>
-          <form id="contactForm" class="rounded-lg border border-white/10 p-6 bg-neutral-900 space-y-4" aria-label="Enquiry form">
-            <p class="text-sm text-neutral-400">Fields marked * are required.</p>
-            <div>
-              <label for="name" class="block text-sm font-medium">Name</label>
-              <input id="name" name="name" type="text" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+          <form id="contactForm" class="rounded-lg border border-white/10 p-6 bg-neutral-900" aria-label="Enquiry form">
+            <div id="contactFields" class="space-y-4">
+              <p class="text-sm text-neutral-400">Fields marked * are required.</p>
+              <div>
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input id="name" name="name" type="text" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+              </div>
+              <div>
+                <label for="carModel" class="block text-sm font-medium">Car model *</label>
+                <input id="carModel" name="carModel" list="carOptions" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium">Email *</label>
+                <input id="email" name="email" type="email" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium">Contact number *</label>
+                <input id="phone" name="phone" type="tel" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30"></textarea>
+              </div>
+              <button type="submit" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Send</button>
             </div>
-            <div>
-              <label for="carModel" class="block text-sm font-medium">Car model *</label>
-              <input id="carModel" name="carModel" list="carOptions" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
+            <div id="contactSuccess" class="hidden space-y-4">
+              <p class="text-sm text-neutral-300">Continue in your mail client to send your message. Thanks for contacting us!</p>
+              <div class="flex gap-2">
+                <button id="contactTry" type="button" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Try again</button>
+                <button id="contactReset" type="button" class="inline-flex items-center gap-2 rounded-md border border-white/15 px-4 py-2 text-sm font-semibold hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-white/50">Reset</button>
+              </div>
             </div>
-            <div>
-              <label for="email" class="block text-sm font-medium">Email *</label>
-              <input id="email" name="email" type="email" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
-            </div>
-            <div>
-              <label for="phone" class="block text-sm font-medium">Contact number *</label>
-              <input id="phone" name="phone" type="tel" required class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30" />
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium">Message</label>
-              <textarea id="message" name="message" rows="4" class="mt-2 w-full rounded-md bg-neutral-950 border border-white/15 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white/30"></textarea>
-            </div>
-            <button type="submit" class="inline-flex items-center gap-2 rounded-md bg-white text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-white/50">Send</button>
           </form>
         </div>
       </div>
@@ -644,6 +653,12 @@
   <script>
     (function () {
       const form = document.getElementById('contactForm');
+      const fields = document.getElementById('contactFields');
+      const success = document.getElementById('contactSuccess');
+      const tryBtn = document.getElementById('contactTry');
+      const resetBtn = document.getElementById('contactReset');
+      let mailtoLink = '';
+
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         const name = document.getElementById('name').value.trim();
@@ -655,7 +670,21 @@
         let body = `Car model: ${car}\nEmail: ${email}\nContact number: ${phone}`;
         if (name) body = `Name: ${name}\n` + body;
         if (message) body += `\n\n${message}`;
-        window.location.href = `mailto:info@rd9.co.uk?subject=${subject}&body=${encodeURIComponent(body)}`;
+        mailtoLink = `mailto:info@rd9.co.uk?subject=${subject}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+        fields.classList.add('hidden');
+        success.classList.remove('hidden');
+      });
+
+      tryBtn.addEventListener('click', () => {
+        if (mailtoLink) window.location.href = mailtoLink;
+      });
+
+      resetBtn.addEventListener('click', () => {
+        success.classList.add('hidden');
+        fields.classList.remove('hidden');
+        form.reset();
+        mailtoLink = '';
       });
     })();
   </script>
