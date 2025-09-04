@@ -13,7 +13,6 @@
     @media (prefers-reduced-motion: reduce) {
       .animate-fade { animation: none !important; }
       .animate-rise { animation: none !important; }
-      .gold-glint { animation: none !important; }
       html { scroll-behavior: auto; }
     }
     @keyframes fade { from {opacity: 0} to {opacity:1} }
@@ -40,37 +39,6 @@
     .active-link {
       text-decoration: underline;
       text-decoration-color: white;
-    }
-    .gold-glint {
-      color: var(--brand);
-      background-image:
-        linear-gradient(var(--brand), var(--brand)),
-        linear-gradient(
-          90deg,
-          rgba(var(--brand-rgb),0) 0%,
-          rgba(255,240,160,0.8) 50%,
-          rgba(var(--brand-rgb),0) 100%
-        );
-      background-size: 100% 100%, 200% 300%;
-      background-position: 0 0, -200% 0;
-      background-repeat: no-repeat;
-      -webkit-background-clip: text;
-      background-clip: text;
-      animation: glint 6s linear infinite;
-    }
-    @supports (-webkit-background-clip: text) {
-      .gold-glint {
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-    @keyframes glint {
-      0% {
-        background-position: 0 0, -200% 0;
-      }
-      100% {
-        background-position: 0 0, 200% 0;
-      }
     }
     #home, section { scroll-margin-top: calc(env(safe-area-inset-top) + 4rem); }
     /* Style car model datalist dropdown on desktop */
@@ -186,7 +154,7 @@
       <div class="max-w-3xl animate-rise">
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
           <span class="sr-only">The Gold Standard</span>
-          The <span class="gold-glint">Gold</span> Standard
+            The <span class="text-brand">Gold</span> Standard
         </h1>
         <p class="mt-6 text-lg text-neutral-300">
           Welcome to RD9 Automotive, Porsche and Prestige vehicle specialists. We feel that, for too long, the motor trade has fallen short, and we are here to change that.
