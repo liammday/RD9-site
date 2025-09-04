@@ -43,17 +43,17 @@
     }
     .gold-glint {
       color: var(--brand);
-      background: linear-gradient(
-        120deg,
-        var(--brand) 0%,
-        var(--brand) 40%,
-        rgba(255,255,255,0.2) 45%,
-        rgba(255,255,255,0.8) 50%,
-        rgba(255,255,255,0.2) 55%,
-        var(--brand) 60%,
-        var(--brand) 100%
-      );
-      background-size: 200% 200%;
+      background-image:
+        linear-gradient(var(--brand), var(--brand)),
+        linear-gradient(
+          90deg,
+          rgba(var(--brand-rgb),0) 0%,
+          rgba(255,240,160,0.8) 50%,
+          rgba(var(--brand-rgb),0) 100%
+        );
+      background-size: 100% 100%, 200% 300%;
+      background-position: 0 0, -200% 0;
+      background-repeat: no-repeat;
       -webkit-background-clip: text;
       background-clip: text;
       animation: glint 6s linear infinite;
@@ -66,10 +66,10 @@
     }
     @keyframes glint {
       0% {
-        background-position: 200% 200%;
+        background-position: 0 0, -200% 0;
       }
       100% {
-        background-position: -200% -200%;
+        background-position: 0 0, 200% 0;
       }
     }
     #home, section { scroll-margin-top: calc(env(safe-area-inset-top) + 4rem); }
