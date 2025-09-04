@@ -216,7 +216,7 @@
             </div>
           </li>
         </ul>
-        <div id="serviceDetail" class="mt-6 hidden lg:block lg:w-2/3 lg:mt-0">
+        <div id="serviceDetail" class="mt-6 hidden opacity-0 lg:block lg:w-2/3 lg:mt-0">
           <div id="serviceContent" class="p-6 h-full rounded-lg border border-white/10 bg-neutral-900 text-neutral-200">
             <p>Select a service to learn more.</p>
           </div>
@@ -1018,6 +1018,7 @@
         const section = document.getElementById('services');
         if (!section) return;
         const cards = section.querySelectorAll('.service-card');
+        const detailPanel = document.getElementById('serviceDetail');
         const observer = new IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
             cards.forEach((card, i) => {
@@ -1025,6 +1026,12 @@
               card.classList.add('animate-rise');
               card.classList.remove('opacity-0');
             });
+            if (detailPanel) {
+              const delay = cards.length * 100 + 800;
+              detailPanel.style.animationDelay = `${delay}ms`;
+              detailPanel.classList.add('animate-rise');
+              detailPanel.classList.remove('opacity-0');
+            }
             observer.disconnect();
           }
         }, { threshold: 0.2 });
