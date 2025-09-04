@@ -26,9 +26,20 @@
     :root { --brand-rgb: 255,215,0; --brand: rgb(var(--brand-rgb)); }
     .text-brand { color: var(--brand); }
     .bg-brand { background-color: var(--brand); }
-    nav a { text-decoration-color: white; transition: color 150ms ease, text-decoration-color 150ms ease; }
-    nav a:hover { color: var(--brand); text-decoration: underline; text-decoration-color: var(--brand); }
-    .active-link { text-decoration: underline; text-decoration-color: white; text-underline-offset: 4px; }
+    nav a {
+      text-decoration-color: white;
+      text-underline-offset: 4px;
+      transition: color 150ms ease, text-decoration-color 150ms ease;
+    }
+    nav a:hover {
+      color: var(--brand);
+      text-decoration: underline;
+      text-decoration-color: var(--brand);
+    }
+    .active-link {
+      text-decoration: underline;
+      text-decoration-color: white;
+    }
     .glint-svg {
       height: 1em;
       width: auto;
