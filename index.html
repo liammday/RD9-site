@@ -69,9 +69,9 @@
   </header>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="fixed inset-0 z-40 hidden" style="bottom:calc(-1 * env(safe-area-inset-bottom))">
+  <div id="mobileMenu" class="fixed inset-0 z-30 hidden" style="bottom:calc(-1 * env(safe-area-inset-bottom))">
     <div id="menuOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-    <nav id="menuPanel" class="absolute top-0 right-0 h-full w-3/5 max-w-xs bg-neutral-950 p-6 transform translate-x-full transition-transform duration-300">
+    <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: calc(env(safe-area-inset-top) + 4rem);">
       <button id="menuClose" class="absolute top-4 right-4 p-2" aria-label="Close menu">
         <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -1039,13 +1039,13 @@
 
       function openMenu() {
         mobileMenu.classList.remove('hidden');
-        requestAnimationFrame(() => menuPanel.classList.remove('translate-x-full'));
+        requestAnimationFrame(() => menuPanel.classList.remove('-translate-y-full'));
         openBtn.classList.add('hidden');
         document.body.classList.add('overflow-hidden');
       }
 
       function closeMenu() {
-        menuPanel.classList.add('translate-x-full');
+        menuPanel.classList.add('-translate-y-full');
         menuPanel.addEventListener('transitionend', () => mobileMenu.classList.add('hidden'), { once: true });
         openBtn.classList.remove('hidden');
         document.body.classList.remove('overflow-hidden');
