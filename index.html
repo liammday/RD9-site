@@ -32,7 +32,7 @@
     .active-link { text-decoration: underline; text-decoration-color: white; text-underline-offset: 4px; }
     .glint {
       position: relative;
-      display: inline;
+      display: inline-block;
       overflow: hidden;
       text-shadow: 0 0 4px rgba(255,215,0,0.3);
       line-height: inherit;
@@ -44,6 +44,9 @@
       left: 0;
       width: 100%;
       height: 100%;
+      font: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
       color: transparent;
       -webkit-text-stroke: 2px rgba(255,255,255,0.8);
       mask-image: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.8) 50%, transparent 60%);
