@@ -13,6 +13,7 @@
     @media (prefers-reduced-motion: reduce) {
       .animate-fade { animation: none !important; }
       .animate-rise { animation: none !important; }
+      .gold-glint { animation: none !important; }
       html { scroll-behavior: auto; }
     }
     @keyframes fade { from {opacity: 0} to {opacity:1} }
@@ -42,15 +43,24 @@
     }
     .gold-glint {
       color: var(--brand);
-      filter: drop-shadow(0 0 1px rgba(0,0,0,0.6)) drop-shadow(-1px 0 0 #fff);
-      animation: glint 4s ease-in-out infinite;
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand) 45%, #fff 50%, var(--brand) 55%, var(--brand) 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: glint 4s linear infinite;
+    }
+    @supports (-webkit-background-clip: text) {
+      .gold-glint {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
     }
     @keyframes glint {
-      0%, 100% {
-        filter: drop-shadow(0 0 1px rgba(0,0,0,0.6)) drop-shadow(-1px 0 0 #fff);
+      0% {
+        background-position: 200% 0;
       }
-      50% {
-        filter: drop-shadow(0 0 1px rgba(0,0,0,0.6)) drop-shadow(1px 0 0 #fff);
+      100% {
+        background-position: -200% 0;
       }
     }
     #home, section { scroll-margin-top: calc(env(safe-area-inset-top) + 4rem); }
