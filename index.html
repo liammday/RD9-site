@@ -120,25 +120,27 @@
       <div id="servicesPanel" class="mt-10 lg:flex lg:items-stretch lg:gap-8">
         <ul id="serviceList" class="space-y-4 lg:space-y-8 lg:w-1/3">
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="porsche-servicing">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="porsche-servicing">
               <img src="icons/porsche-servicing.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Porsche Servicing</h3>
                 <p class="mt-1 text-sm text-neutral-300">We offer a wide range of servicing and repairs to meet your requirements. Whether that be servicing using genuine Porsche parts (required when your car is under manufacturer warranty) or the very best of the aftermarket. </p>
+                <a href="#prices" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">View Prices</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden"><p>We offer a wide range of servicing and repairs to meet your requirements. Whether that be servicing using genuine Porsche parts (required when your car is under manufacturer warranty) or the very best of the aftermarket.</p></div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="performance">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="performance">
               <img src="icons/performance.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Performance</h3>
                 <p class="mt-1 text-sm text-neutral-300">Unlock the full potential of your vehicle… tuning options… package deal with one of our performance maps.</p>
+                <a href="#contact" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">Contact Us</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden">
               <p>We offer a wide range of tuning options, using an array of well known trusted brands.</p>
               <p class="mt-4">All options can be put into a package deal with one of our performance maps. All parts we supply will come with a minimum 12 month warranty.</p>
@@ -154,14 +156,15 @@
             </div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="prestige">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="prestige">
               <img src="icons/prestige.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Prestige</h3>
                 <p class="mt-1 text-sm text-neutral-300">We understand that your luxury vehicle demands nothing but the best…</p>
+                <a href="#contact" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">Contact Us</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden">
               <p>We understand that your luxury vehicle demands nothing but the best, and our team of skilled technicians is committed to delivering unparalleled service that befits the prestige of your vehicle.</p>
               <p class="mt-4">From SUV’s to two seat convertible sports cars we can offer servicing and repairs along with modifications and multitude of retro fits.</p>
@@ -170,28 +173,30 @@
             </div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="electric-hybrid">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="electric-hybrid">
               <img src="icons/electric-hybrid.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Electric &amp; Hybrid</h3>
                 <p class="mt-1 text-sm text-neutral-300">We offer fully qualified High Voltage technicians…</p>
+                <a href="#contact" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">Contact Us</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden">
               <p>We offer fully qualified High Voltage technicians to take care of your electric or hybrid vehicle. From routine maintenance to large repairs of the High Voltage systems we have you covered.</p>
               <p class="mt-4">Due to variation between makes and models for all non Porsche enquiries please contact us to discuss required repairs or servicing.</p>
             </div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="wheel-alignment">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="wheel-alignment">
               <img src="icons/wheel-alignment.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Wheel Alignment</h3>
                 <p class="mt-1 text-sm text-neutral-300">Suspension alignments are a critical aspect of vehicle maintenance…</p>
+                <a href="#contact" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">Contact Us</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden">
               <p>Suspension alignments are a critical aspect of vehicle maintenance that ensure optimal performance, safety, and comfort while driving. A proper suspension alignment involves adjusting the angles of the wheels so that they are set to the car manufacturer's specifications. This process typically includes three main measurements: camber, caster, and toe.</p>
               <p class="mt-2"><strong>Camber</strong> refers to the tilt of the wheels when viewed from the front of the vehicle. A wheel that tilts inward at the top has negative camber, while one that tilts outward has positive camber. Proper camber adjustments help to balance tire wear and improve handling.</p>
@@ -203,14 +208,15 @@
             </div>
           </li>
           <li>
-            <button type="button" class="service-card relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="pre-purchase-inspections">
+            <div role="button" tabindex="0" class="service-card cursor-pointer relative w-full flex items-start gap-4 text-left rounded-lg border border-white/10 p-6 pr-12 bg-neutral-900 opacity-0 transition transform hover:-translate-y-1 hover:bg-neutral-800 hover:border-white/20" data-service="pre-purchase-inspections">
               <img src="icons/pre-purchase.svg" alt="" class="h-10 w-10 flex-shrink-0" />
-              <div class="flex-1">
+              <div class="flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg">Pre-Purchase Inspections</h3>
                 <p class="mt-1 text-sm text-neutral-300">A pre-purchase Inspection gives you a more in-depth understanding of what you’re buying…</p>
+                <a href="#contact" onclick="event.stopPropagation()" class="mt-auto self-center inline-flex items-center rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">Contact Us</a>
               </div>
               <svg class="chevron absolute right-6 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400 transition-transform lg:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-            </button>
+            </div>
             <div class="service-details mt-4 p-4 rounded-lg border border-white/10 bg-neutral-900 hidden lg:hidden">
               <p>A pre-purchase inspection is a crucial step in the process of buying a used car. This comprehensive assessment, conducted by one of our experienced technicians, aims to evaluate the overall condition of the vehicle before finalising the purchase. During the inspection, various aspects of the car are examined, including the engine, transmission, brakes, suspension, tires, and electrical systems. Additionally, the technician will check for any signs of previous accidents, rust, or hidden damage that may not be immediately apparent. The goal of this inspection is to provide you with a clear understanding of the vehicle's current state, uncover any potential issues that could lead to costly repairs in the future, and ultimately ensure that you are making a well-informed decision. Investing in a pre-purchase inspection can save you from unexpected headaches and financial burdens, making it a wise move for any prospective owner.</p>
               <p class="mt-4">After the PPI is carried out you will be sent a full report consisting of a digital vehicle health check consisting of photos and a walk around video of the vehicle. Also you will receive a full diagnostic report.</p>
