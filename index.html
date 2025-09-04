@@ -1145,6 +1145,9 @@
         }
       });
 
+      const header = document.querySelector('body > header');
+      const offset = header ? header.offsetHeight : 0;
+
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.id;
@@ -1155,7 +1158,10 @@
             links.forEach(l => l.classList.remove('active-link'));
           }
         });
-      }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
+      }, {
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100),
+        rootMargin: `-${offset}px 0px 0px 0px`
+      });
 
       Object.keys(linkMap).forEach(id => {
         const section = document.getElementById(id);
