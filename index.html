@@ -1232,7 +1232,7 @@
   </script>
   <script type="module">
     import * as THREE from 'https://unpkg.com/three@0.156.1/build/three.module.js';
-    import { SVGLoader } from 'https://unpkg.com/three@0.156.1/examples/jsm/loaders/SVGLoader.js';
+    import { GLTFLoader } from 'https://unpkg.com/three@0.156.1/examples/jsm/loaders/GLTFLoader.js';
     const container = document.getElementById('shieldContainer');
     if (container) {
       const width = container.clientWidth;
@@ -1240,7 +1240,6 @@
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
       camera.position.z = 150;
-      camera.lookAt(0, 0, 0);
       const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
       renderer.setSize(width, height);
       container.innerHTML = '';
@@ -1250,29 +1249,22 @@
       const point = new THREE.PointLight(0xffffff, 1);
       point.position.set(100, 100, 100);
       scene.add(point);
-      const loader = new SVGLoader();
-      loader.load('hero-shield.svg', data => {
-        const shapes = [];
-        data.paths.forEach(path => {
-          const shapesForPath = SVGLoader.createShapes(path);
-          shapes.push(...shapesForPath);
+      const loader = new GLTFLoader();
+      loader.load('Shield_Crest.glb', (gltf) => {
+        const shield = gltf.scene;
+        shield.traverse((obj) => {
+          if (obj.isMesh) {
+            obj.material = new THREE.MeshStandardMaterial({
+              color: 0xffd700,
+              metalness: 1,
+              roughness: 0.2,
+            });
+          }
         });
-        const geometry = new THREE.ExtrudeGeometry(shapes, {
-          depth: 8,
-          bevelEnabled: true,
-          bevelThickness: 1,
-          bevelSize: 1,
-          bevelSegments: 2,
-        });
-        geometry.center();
-        const front = new THREE.MeshStandardMaterial({ color: 0xffd700, metalness: 1, roughness: 0.2 });
-        const side = new THREE.MeshStandardMaterial({ color: 0xb8860b, metalness: 1, roughness: 0.3 });
-        const mesh = new THREE.Mesh(geometry, [front, side]);
-        mesh.scale.y = -1;
-        scene.add(mesh);
+        scene.add(shield);
         function animate(time = 0) {
           requestAnimationFrame(animate);
-          mesh.rotation.y = Math.sin(time * 0.001) * THREE.MathUtils.degToRad(20);
+          shield.rotation.y = Math.sin(time * 0.001) * THREE.MathUtils.degToRad(20);
           renderer.render(scene, camera);
         }
         animate();
