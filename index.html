@@ -2,7 +2,7 @@
 <html lang="en" class="h-full">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>RD9 Automotive — Porsche & Prestige Specialists</title>
   <meta name="description" content="RD9 Automotive — Porsche and prestige vehicle specialists. Fixed-price servicing, performance, wheel alignment, EV/hybrid, and pre-purchase inspections." />
   <!-- Tailwind via CDN -->
@@ -23,7 +23,8 @@
     .price-section th, .price-section td { width:33.333%; }
     .vh-100 { height:100vh; height:100dvh; }
     .min-vh-100 { min-height:100vh; min-height:100dvh; }
-    :root { --brand-rgb: 255,215,0; --brand: rgb(var(--brand-rgb)); }
+    :root { --safe-top: env(safe-area-inset-top); --safe-bottom: env(safe-area-inset-bottom); --brand-rgb: 255,215,0; --brand: rgb(var(--brand-rgb)); }
+    html.modal-open, body.modal-open { height: 100dvh; overflow: hidden; }
     .text-brand { color: var(--brand); }
     .bg-brand { background-color: var(--brand); }
     nav a {
@@ -40,7 +41,7 @@
       text-decoration: underline;
       text-decoration-color: white;
     }
-    #home, section { scroll-margin-top: 4rem; }
+    #home, section { scroll-margin-top: calc(4rem + var(--safe-top)); }
     /* Style car model datalist dropdown on desktop */
     #carOptions {
       background-color: rgb(23 23 23);
@@ -131,9 +132,9 @@
     }
   </style>
 </head>
-<body id="home" class="bg-neutral-950 text-neutral-100 antialiased min-vh-100 pt-16">
+<body id="home" class="bg-neutral-950 text-neutral-100 antialiased min-vh-100">
   <!-- Header / Nav -->
-  <header class="fixed top-0 left-0 w-full z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10">
+  <header class="sticky top-0 w-full z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10 pt-[var(--safe-top)]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center">
         <img src="RD9-simple-white.svg" alt="RD9 Automotive logo" class="h-8 w-auto">
@@ -168,9 +169,9 @@
   </header>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="fixed inset-0 z-30 hidden" style="bottom:calc(-1 * env(safe-area-inset-bottom))">
+  <div id="mobileMenu" class="fixed inset-0 z-30 hidden">
     <div id="menuOverlay" class="absolute inset-0 bg-black/50"></div>
-    <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: 4rem;">
+    <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: calc(4rem + var(--safe-top)); padding-bottom: var(--safe-bottom);">
       <ul class="mt-12 space-y-4 text-lg">
         <li><a href="#services" class="block">Services</a></li>
         <li><a href="#prices" class="block">Prices</a></li>
@@ -1215,7 +1216,8 @@
         requestAnimationFrame(() => menuPanel.classList.remove('-translate-y-full'));
         openBtn.classList.add('opacity-0', 'pointer-events-none');
         closeBtn.classList.remove('opacity-0', 'pointer-events-none');
-        document.body.classList.add('overflow-hidden');
+        document.documentElement.classList.add('modal-open');
+        document.body.classList.add('modal-open');
       }
 
       function closeMenu() {
@@ -1223,7 +1225,8 @@
         menuPanel.addEventListener('transitionend', () => mobileMenu.classList.add('hidden'), { once: true });
         openBtn.classList.remove('opacity-0', 'pointer-events-none');
         closeBtn.classList.add('opacity-0', 'pointer-events-none');
-        document.body.classList.remove('overflow-hidden');
+        document.documentElement.classList.remove('modal-open');
+        document.body.classList.remove('modal-open');
       }
 
       openBtn.addEventListener('click', openMenu);
