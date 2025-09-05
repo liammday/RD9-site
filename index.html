@@ -118,29 +118,6 @@
       to { background-position: 200% 0; }
     }
 
-    .shield-glint {
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-      perspective: 800px;
-    }
-
-    .shield-glint::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
-      animation: shieldGlint 6s linear infinite;
-    }
-
-    @keyframes shieldGlint {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-
     #shieldContainer canvas {
       width: 100%;
       height: 100%;
@@ -220,7 +197,7 @@
           </div>
         </div>
         <div class="mt-12 lg:mt-0 lg:ml-8 flex justify-center">
-          <div id="shieldContainer" class="shield-glint w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64"></div>
+          <div id="shieldContainer" class="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64"></div>
         </div>
       </div>
     </div>
@@ -1267,11 +1244,7 @@
       point.position.set(100, 100, 100);
       scene.add(point);
       const loader = new SVGLoader();
-      const texLoader = new THREE.TextureLoader();
-      Promise.all([
-        new Promise(res => loader.load('hero-shield.svg', res)),
-        new Promise(res => texLoader.load('hero-shield.svg', res))
-      ]).then(([data, texture]) => {
+      loader.load('hero-shield.svg', data => {
         const shapes = data.paths[0].toShapes(true);
         const geometry = new THREE.ExtrudeGeometry(shapes, {
           depth: 8,
@@ -1281,7 +1254,7 @@
           bevelSegments: 2,
         });
         geometry.center();
-        const front = new THREE.MeshStandardMaterial({ map: texture, metalness: 1, roughness: 0.2 });
+        const front = new THREE.MeshStandardMaterial({ color: 0xffd700, metalness: 1, roughness: 0.2 });
         const side = new THREE.MeshStandardMaterial({ color: 0xb8860b, metalness: 1, roughness: 0.3 });
         const mesh = new THREE.Mesh(geometry, [front, side]);
         scene.add(mesh);
