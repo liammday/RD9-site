@@ -6,5 +6,7 @@
       <stop offset="100%" stop-color="#b8860b"/>
     </linearGradient>
   </defs>
-  <path fill="url(#gold)" d="M50 0 L90 20 V70 Q90 90 50 120 Q10 90 10 70 V20 Z"/>
+  <path id="outer" fill="url(#gold)" d="M50 0 L90 20 V70 Q90 90 50 120 Q10 90 10 70 V20 Z"/>
+  <path fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2" d="M50 5 L85 23 V68 Q85 85 50 115 Q15 85 15 68 V23 Z"/>
+  <path fill="#ffffff" fill-opacity="0.5" d="M50 40 L60 50 L50 60 L40 50 Z"/>
 </svg>
