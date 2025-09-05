@@ -151,24 +151,26 @@
         <a href="#contact" class="inline-flex items-center gap-2 rounded-md bg-brand text-neutral-900 px-3 py-2 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/50">
           Book / Enquire
         </a>
-        <button id="menuOpen" class="md:hidden p-2" aria-label="Open menu">
-          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+        <div class="md:hidden relative">
+          <button id="menuOpen" class="p-2 transition-opacity duration-300" aria-label="Open menu">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <button id="menuClose" class="p-2 absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-300" aria-label="Close menu">
+            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Mobile menu -->
   <div id="mobileMenu" class="fixed inset-0 z-30 hidden" style="bottom:calc(-1 * env(safe-area-inset-bottom))">
-    <div id="menuOverlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div id="menuOverlay" class="absolute inset-0 bg-black/50"></div>
     <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: calc(env(safe-area-inset-top) + 4rem);">
-      <button id="menuClose" class="absolute top-4 right-4 p-2" aria-label="Close menu">
-        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
       <ul class="mt-12 space-y-4 text-lg">
         <li><a href="#services" class="block">Services</a></li>
         <li><a href="#prices" class="block">Prices</a></li>
@@ -202,9 +204,7 @@
             <a href="#about" class="px-5 py-3 font-semibold border border-white/20 text-white rounded-md hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/40">About RD9</a>
           </div>
         </div>
-        <div class="mt-12 lg:mt-0 lg:ml-8 flex justify-center">
-          <lottie-player id="steeringWheel" src="/RD9-site/porsche-steering-wheel.json" background="transparent" speed="1" loop autoplay class="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64"></lottie-player>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -1213,14 +1213,16 @@
       function openMenu() {
         mobileMenu.classList.remove('hidden');
         requestAnimationFrame(() => menuPanel.classList.remove('-translate-y-full'));
-        openBtn.classList.add('hidden');
+        openBtn.classList.add('opacity-0', 'pointer-events-none');
+        closeBtn.classList.remove('opacity-0', 'pointer-events-none');
         document.body.classList.add('overflow-hidden');
       }
 
       function closeMenu() {
         menuPanel.classList.add('-translate-y-full');
         menuPanel.addEventListener('transitionend', () => mobileMenu.classList.add('hidden'), { once: true });
-        openBtn.classList.remove('hidden');
+        openBtn.classList.remove('opacity-0', 'pointer-events-none');
+        closeBtn.classList.add('opacity-0', 'pointer-events-none');
         document.body.classList.remove('overflow-hidden');
       }
 
@@ -1230,7 +1232,6 @@
       mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
     })();
   </script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script>
     (function () {
       const linkMap = {};
