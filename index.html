@@ -40,7 +40,7 @@
       text-decoration: underline;
       text-decoration-color: white;
     }
-    #home, section { scroll-margin-top: calc(env(safe-area-inset-top) + 4rem); }
+    #home, section { scroll-margin-top: 4rem; }
     /* Style car model datalist dropdown on desktop */
     #carOptions {
       background-color: rgb(23 23 23);
@@ -131,9 +131,9 @@
     }
   </style>
 </head>
-<body id="home" class="bg-neutral-950 text-neutral-100 antialiased min-vh-100 pt-16" style="padding-top: calc(env(safe-area-inset-top) + 4rem);">
+<body id="home" class="bg-neutral-950 text-neutral-100 antialiased min-vh-100 pt-16">
   <!-- Header / Nav -->
-  <header class="fixed top-0 left-0 w-full z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10" style="padding-top: env(safe-area-inset-top);">
+  <header class="fixed top-0 left-0 w-full z-40 backdrop-blur bg-neutral-950/70 border-b border-white/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center">
         <img src="RD9-simple-white.svg" alt="RD9 Automotive logo" class="h-8 w-auto">
@@ -170,7 +170,7 @@
   <!-- Mobile menu -->
   <div id="mobileMenu" class="fixed inset-0 z-30 hidden" style="bottom:calc(-1 * env(safe-area-inset-bottom))">
     <div id="menuOverlay" class="absolute inset-0 bg-black/50"></div>
-    <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: calc(env(safe-area-inset-top) + 4rem);">
+    <nav id="menuPanel" class="absolute top-0 left-0 w-full bg-neutral-950 p-6 transform -translate-y-full transition-transform duration-300" style="padding-top: 4rem;">
       <ul class="mt-12 space-y-4 text-lg">
         <li><a href="#services" class="block">Services</a></li>
         <li><a href="#prices" class="block">Prices</a></li>
