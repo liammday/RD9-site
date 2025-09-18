@@ -39,3 +39,6 @@ jobs:
           body: "Automated update."
           branch: "prices/update"
           delete-branch: true
+          add-paths: |
+            index.html
+            site/data/prices.json
