@@ -1,1 +1,4817 @@
-[]
+[
+  {
+    "id": "taycan-4s-turbo-turbo-s",
+    "title": "Taycan 4S / Turbo / Turbo S",
+    "model_family": "Taycan",
+    "generation": "4S / Turbo / Turbo S",
+    "variants": [
+      {
+        "name": "4S / Turbo / Turbo S",
+        "heading": "Petrol (Turbo S)",
+        "years": "",
+        "powertrain": "Petrol (Turbo S)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Maintenance",
+            "interval": "20k miles",
+            "price": "£405",
+            "service_category": "Scheduled Service",
+            "service_item": "Maintenance",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "405"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-958-e2-2010-2017",
+    "title": "Cayenne 958 E2 (2010–2017)",
+    "model_family": "Cayenne",
+    "generation": "958 E2 (2010–2017)",
+    "variants": [
+      {
+        "name": "V6",
+        "heading": "V6 (958 E2 (2010–2017), Petrol (V6))",
+        "years": "958 E2 (2010–2017)",
+        "powertrain": "Petrol (V6)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£615",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "615"
+          }
+        ]
+      },
+      {
+        "name": "/ S / GTS",
+        "heading": "/ S / GTS (958 E2 (2010–2017))",
+        "years": "958 E2 (2010–2017)",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£665",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "665"
+          }
+        ]
+      },
+      {
+        "name": "Diesel V6",
+        "heading": "Diesel V6 (958 E2 (2010–2017), Diesel)",
+        "years": "958 E2 (2010–2017)",
+        "powertrain": "Diesel",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£225",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "225"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£370",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "370"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£650",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "650"
+          }
+        ]
+      },
+      {
+        "name": "Diesel V8",
+        "heading": "Diesel V8 (958 E2 (2010–2017), Diesel)",
+        "years": "958 E2 (2010–2017)",
+        "powertrain": "Diesel",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£225",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "225"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£685",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "685"
+          }
+        ]
+      },
+      {
+        "name": "Turbo",
+        "heading": "Turbo (958 E2 (2010–2017), Petrol (Turbo))",
+        "years": "958 E2 (2010–2017)",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£665",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "665"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-958-e2-2010-2022",
+    "title": "Cayenne 958 E2 (2010–2022)",
+    "model_family": "Cayenne",
+    "generation": "958 E2 (2010–2022)",
+    "variants": [
+      {
+        "name": "Hybrid / E-Hybrid",
+        "heading": "Hybrid / E-Hybrid (958 E2 (2010–2022), Hybrid)",
+        "years": "958 E2 (2010–2022)",
+        "powertrain": "Hybrid",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£235",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "235"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£610",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "610"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-957-2008-2009",
+    "title": "Cayenne 957 (2008–2009)",
+    "model_family": "Cayenne",
+    "generation": "957 (2008–2009)",
+    "variants": [
+      {
+        "name": "Diesel",
+        "heading": "Diesel (957 (2008–2009), Diesel)",
+        "years": "957 (2008–2009)",
+        "powertrain": "Diesel",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£225",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "225"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£295",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "295"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£650",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "650"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-957-2007-2009",
+    "title": "Cayenne 957 (2007–2009)",
+    "model_family": "Cayenne",
+    "generation": "957 (2007–2009)",
+    "variants": [
+      {
+        "name": "Turbo",
+        "heading": "Turbo (957 (2007–2009), Petrol (Turbo))",
+        "years": "957 (2007–2009)",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£665",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "665"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-955-2003-2009",
+    "title": "Cayenne 955 (2003–2009)",
+    "model_family": "Cayenne",
+    "generation": "955 (2003–2009)",
+    "variants": [
+      {
+        "name": "S",
+        "heading": "S (955 (2003–2009))",
+        "years": "955 (2003–2009)",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£625",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "625"
+          }
+        ]
+      },
+      {
+        "name": "V6",
+        "heading": "V6 (955 (2003–2009), Petrol (V6))",
+        "years": "955 (2003–2009)",
+        "powertrain": "Petrol (V6)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£625",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "625"
+          }
+        ]
+      },
+      {
+        "name": "Turbo",
+        "heading": "Turbo (955 (2003–2009), Petrol (Turbo))",
+        "years": "955 (2003–2009)",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£665",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "665"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayenne-957-2008-2010",
+    "title": "Cayenne 957 (2008–2010)",
+    "model_family": "Cayenne",
+    "generation": "957 (2008–2010)",
+    "variants": [
+      {
+        "name": "S",
+        "heading": "S (957 (2008–2010))",
+        "years": "957 (2008–2010)",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£625",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "625"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "macan-2014-2024",
+    "title": "Macan (2014–2024)",
+    "model_family": "Macan",
+    "generation": "2014–2024",
+    "variants": [
+      {
+        "name": "Base",
+        "heading": "Base (2014–2024)",
+        "years": "2014–2024",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£235",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "235"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£390",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "390"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£585",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "585"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£180",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "180"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "80k miles",
+            "price": "£75",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "80000",
+            "interval_years": "",
+            "raw_price": "75"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "Base",
+        "heading": "Base (2014–2024, PDK)",
+        "years": "2014–2024",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "40k miles",
+            "price": "£270",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "270"
+          }
+        ]
+      },
+      {
+        "name": "Turbo / GTS",
+        "heading": "Turbo / GTS (2014–2024, Petrol (Turbo))",
+        "years": "2014–2024",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£235",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "235"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£410",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "410"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£600",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "600"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£205",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "205"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "80k miles",
+            "price": "£110",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "80000",
+            "interval_years": "",
+            "raw_price": "110"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "Turbo / GTS",
+        "heading": "Turbo / GTS (2014–2024, Petrol (Turbo), PDK)",
+        "years": "2014–2024",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "40k miles",
+            "price": "£270",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "270"
+          }
+        ]
+      },
+      {
+        "name": "S",
+        "heading": "S (2014–2024)",
+        "years": "2014–2024",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£235",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "235"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£410",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "410"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£585",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "585"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "panamera-v6-v8",
+    "title": "Panamera V6 / V8",
+    "model_family": "Panamera",
+    "generation": "V6 / V8",
+    "variants": [
+      {
+        "name": "V6 / V8",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£350",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "350"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£400",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "400"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£655",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "655"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£665",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "665"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "V6 / V8",
+        "heading": "PDK",
+        "years": "",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Service",
+            "interval": "60k miles",
+            "price": "£695",
+            "service_category": "Transmission",
+            "service_item": "PDK Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "695"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "panamera-turbo",
+    "title": "Panamera Turbo",
+    "model_family": "Panamera",
+    "generation": "Turbo",
+    "variants": [
+      {
+        "name": "Turbo",
+        "heading": "Petrol (Turbo)",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£250",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "250"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£405",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "405"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£710",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "710"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "Turbo",
+        "heading": "Petrol (Turbo), PDK",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Service",
+            "interval": "60k miles",
+            "price": "£695",
+            "service_category": "Transmission",
+            "service_item": "PDK Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "695"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "panamera-diesel",
+    "title": "Panamera Diesel",
+    "model_family": "Panamera",
+    "generation": "Diesel",
+    "variants": [
+      {
+        "name": "Diesel",
+        "heading": "Diesel",
+        "years": "",
+        "powertrain": "Diesel",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£235",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "235"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£360",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "360"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£640",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "Diesel",
+        "heading": "Diesel, PDK",
+        "years": "",
+        "powertrain": "Diesel",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Service",
+            "interval": "60k miles",
+            "price": "£695",
+            "service_category": "Transmission",
+            "service_item": "PDK Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "695"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "panamera-hybrid-e-hybrid",
+    "title": "Panamera Hybrid / E-Hybrid",
+    "model_family": "Panamera",
+    "generation": "Hybrid / E-Hybrid",
+    "variants": [
+      {
+        "name": "Hybrid / E-Hybrid",
+        "heading": "Hybrid",
+        "years": "",
+        "powertrain": "Hybrid",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Oil Service",
+            "interval": "Timeline variable",
+            "price": "£240",
+            "service_category": "Scheduled Service",
+            "service_item": "Oil Service",
+            "interval_miles": "",
+            "interval_years": "timeline variable",
+            "raw_price": "240"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£395",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "395"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£675",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "675"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "Hybrid / E-Hybrid",
+        "heading": "Hybrid, PDK",
+        "years": "",
+        "powertrain": "Hybrid",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Service",
+            "interval": "60k miles",
+            "price": "£695",
+            "service_category": "Transmission",
+            "service_item": "PDK Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "695"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayman-718",
+    "title": "Cayman (718)",
+    "model_family": "Cayman",
+    "generation": "718",
+    "variants": [
+      {
+        "name": "718",
+        "heading": "2017–2022",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£550",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "550"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£165",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "165"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£215",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "215"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "718",
+        "heading": "2017–2022, Manual",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "718",
+        "heading": "2017–2022, PDK",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayman-987",
+    "title": "Cayman (987)",
+    "model_family": "Cayman",
+    "generation": "987",
+    "variants": [
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£335",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "335"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£505",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "505"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£200",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "200"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012, Manual)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012, PDK)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "60k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      },
+      {
+        "name": "987 Gen 1",
+        "heading": "Gen 1 (2005–2008)",
+        "years": "2005–2008",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£335",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "335"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£505",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "505"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£200",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "200"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cayman-981",
+    "title": "Cayman (981)",
+    "model_family": "Cayman",
+    "generation": "981",
+    "variants": [
+      {
+        "name": "981",
+        "heading": "2013–2016",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£385",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "385"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£545",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "545"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£240",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "240"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£125",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "125"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£185",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "185"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "981",
+        "heading": "2013–2016, Manual",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£95",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "981",
+        "heading": "2013–2016, PDK",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boxster-718",
+    "title": "Boxster (718)",
+    "model_family": "Boxster",
+    "generation": "718",
+    "variants": [
+      {
+        "name": "718",
+        "heading": "2017–2022",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£550",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "550"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£165",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "165"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£215",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "215"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£140",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "718",
+        "heading": "2017–2022, Manual",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "718",
+        "heading": "2017–2022, PDK",
+        "years": "2017–2022",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boxster-987",
+    "title": "Boxster (987)",
+    "model_family": "Boxster",
+    "generation": "987",
+    "variants": [
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£335",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "335"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£505",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "505"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£200",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "200"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£130",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "130"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012, Manual)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "987 Gen 2",
+        "heading": "Gen 2 (2009–2012, PDK)",
+        "years": "2009–2012",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "60k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boxster-986",
+    "title": "Boxster (986)",
+    "model_family": "Boxster",
+    "generation": "986",
+    "variants": [
+      {
+        "name": "986",
+        "heading": "1998–2004",
+        "years": "1998–2004",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Maintenance",
+            "interval": "1 year",
+            "price": "£105",
+            "service_category": "Scheduled Service",
+            "service_item": "Maintenance",
+            "interval_miles": "",
+            "interval_years": "1",
+            "raw_price": "105"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "20k miles / 12 years",
+            "price": "£270",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "12",
+            "raw_price": "270"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles / 24 years",
+            "price": "£470",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "24",
+            "raw_price": "470"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles / 48 years",
+            "price": "£165",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "48",
+            "raw_price": "165"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles / 48 years",
+            "price": "£125",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "48",
+            "raw_price": "125"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "boxster-981",
+    "title": "Boxster (981)",
+    "model_family": "Boxster",
+    "generation": "981",
+    "variants": [
+      {
+        "name": "981",
+        "heading": "2013–2016",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£385",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "385"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£545",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "545"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "20k miles",
+            "price": "£240",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "240"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£125",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "125"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£185",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "185"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "981",
+        "heading": "2013–2016, Manual",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£95",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "981",
+        "heading": "2013–2016, PDK",
+        "years": "2013–2016",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£210",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "210"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-992",
+    "title": "911 (992)",
+    "model_family": "911",
+    "generation": "992",
+    "variants": [
+      {
+        "name": "992 Carrera / Carrera S",
+        "heading": "Carrera / Carrera S (2019–2022)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£415",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "415"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£635",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "635"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£235",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "235"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£305",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£255",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "992 Carrera / Carrera S",
+        "heading": "Carrera / Carrera S (2019–2022, Manual)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "992 Carrera / Carrera S",
+        "heading": "Carrera / Carrera S (2019–2022, PDK)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "992 Carrera 4 / 4S",
+        "heading": "Carrera 4 / 4S (2019–2022)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£415",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "415"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£635",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "635"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£235",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "235"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£305",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£255",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "992 Carrera 4 / 4S",
+        "heading": "Carrera 4 / 4S (2019–2022, Manual)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "992 Carrera 4 / 4S",
+        "heading": "Carrera 4 / 4S (2019–2022, PDK)",
+        "years": "2019–2022",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "992 Turbo / Turbo S",
+        "heading": "Turbo / Turbo S (2020–2022, Petrol (Turbo S))",
+        "years": "2020–2022",
+        "powertrain": "Petrol (Turbo S)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£435",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "435"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£640",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£445",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "445"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£315",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "315"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£255",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "992 Turbo / Turbo S",
+        "heading": "Turbo / Turbo S (2020–2022, Petrol (Turbo S), Manual)",
+        "years": "2020–2022",
+        "powertrain": "Petrol (Turbo S)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "992 Turbo / Turbo S",
+        "heading": "Turbo / Turbo S (2020–2022, Petrol (Turbo S), PDK)",
+        "years": "2020–2022",
+        "powertrain": "Petrol (Turbo S)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "992 GT3 / GT3 RS",
+        "heading": "GT3 / GT3 RS (2021–2022, Petrol (GT))",
+        "years": "2021–2022",
+        "powertrain": "Petrol (GT)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£455",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "455"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£655",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "655"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£215",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "215"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£610",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "610"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£265",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "265"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "992 GT3 / GT3 RS",
+        "heading": "GT3 / GT3 RS (2021–2022, Petrol (GT), Manual)",
+        "years": "2021–2022",
+        "powertrain": "Petrol (GT)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "992 GT3 / GT3 RS",
+        "heading": "GT3 / GT3 RS (2021–2022, Petrol (GT), PDK)",
+        "years": "2021–2022",
+        "powertrain": "Petrol (GT)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-991",
+    "title": "911 (991)",
+    "model_family": "911",
+    "generation": "991",
+    "variants": [
+      {
+        "name": "991 Gen 1",
+        "heading": "Gen 1 (2011–2016)",
+        "years": "2011–2016",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£400",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "400"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£570",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "570"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£190",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£270",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "270"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£255",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "991 Gen 1",
+        "heading": "Gen 1 (2011–2016, Manual)",
+        "years": "2011–2016",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "991 Gen 1",
+        "heading": "Gen 1 (2011–2016, PDK)",
+        "years": "2011–2016",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "991 GT3 / RS Gen 1",
+        "heading": "GT3 / RS Gen 1 (Petrol (GT))",
+        "years": "",
+        "powertrain": "Petrol (GT)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£410",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "410"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£705",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "705"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£340",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "340"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£230",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "230"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£640",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "40k miles",
+            "price": "£265",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "265"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "991 GT3 / RS Gen 1",
+        "heading": "GT3 / RS Gen 1 (Petrol (GT), Manual)",
+        "years": "",
+        "powertrain": "Petrol (GT)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "991 GT3 / RS Gen 1",
+        "heading": "GT3 / RS Gen 1 (Petrol (GT), PDK)",
+        "years": "",
+        "powertrain": "Petrol (GT)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "60k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "991 Turbo Gen 1 & 2",
+        "heading": "Turbo Gen 1 & 2 (Petrol (Turbo))",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£400",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "400"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£615",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "615"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£435",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "435"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£475",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "475"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£365",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "365"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "991 Turbo Gen 1 & 2",
+        "heading": "Turbo Gen 1 & 2 (Petrol (Turbo), Manual)",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "991 Turbo Gen 1 & 2",
+        "heading": "Turbo Gen 1 & 2 (Petrol (Turbo), PDK)",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      },
+      {
+        "name": "991 Gen 2",
+        "heading": "Gen 2 (2016–2019)",
+        "years": "2016–2019",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£400",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "400"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£570",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "570"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£190",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "60k miles",
+            "price": "£295",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "295"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£255",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "991 Gen 2",
+        "heading": "Gen 2 (2016–2019, Manual)",
+        "years": "2016–2019",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox/Diff",
+            "interval": "120k miles",
+            "price": "£120",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox/Diff",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "120"
+          }
+        ]
+      },
+      {
+        "name": "991 Gen 2",
+        "heading": "Gen 2 (2016–2019, PDK)",
+        "years": "2016–2019",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "120k miles",
+            "price": "£205",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "205"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-997",
+    "title": "911 (997)",
+    "model_family": "911",
+    "generation": "997",
+    "variants": [
+      {
+        "name": "997 Gen 1",
+        "heading": "Gen 1 (2004–2008)",
+        "years": "2004–2008",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£345",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "345"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£515",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "515"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£190",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£65",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "65"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£135",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "135"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "997 Gen 1",
+        "heading": "Gen 1 (2004–2008, Manual)",
+        "years": "2004–2008",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "997 Gen 1",
+        "heading": "Gen 1 (2004–2008, Tiptronic)",
+        "years": "2004–2008",
+        "powertrain": "",
+        "transmission": "Tiptronic",
+        "items": [
+          {
+            "job": "Tiptronic Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£300",
+            "service_category": "Transmission",
+            "service_item": "Tiptronic Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "300"
+          }
+        ]
+      },
+      {
+        "name": "997 Gen 2",
+        "heading": "Gen 2 (2008–2012)",
+        "years": "2008–2012",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£345",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "345"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£515",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "515"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£310",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "310"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£120",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "120"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£135",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "135"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "997 Gen 2",
+        "heading": "Gen 2 (2008–2012, Manual)",
+        "years": "2008–2012",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "997 Gen 2",
+        "heading": "Gen 2 (2008–2012, PDK)",
+        "years": "2008–2012",
+        "powertrain": "",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "60k miles",
+            "price": "£215",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "215"
+          }
+        ]
+      },
+      {
+        "name": "997 GT3 / RS",
+        "heading": "GT3 / RS (2009–2012, Petrol (GT))",
+        "years": "2009–2012",
+        "powertrain": "Petrol (GT)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£380",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "380"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£575",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "575"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£395",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "395"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£140",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "140"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£150",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "150"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "997 GT3 / RS",
+        "heading": "GT3 / RS (2009–2012, Petrol (GT), Manual)",
+        "years": "2009–2012",
+        "powertrain": "Petrol (GT)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 1",
+        "heading": "Turbo / GT2 Gen 1 (2005–2008, Petrol (Turbo))",
+        "years": "2005–2008",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£360",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "360"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£575",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "575"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£395",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "395"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£120",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "120"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£150",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "150"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 1",
+        "heading": "Turbo / GT2 Gen 1 (2005–2008, Petrol (Turbo), Manual)",
+        "years": "2005–2008",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 1",
+        "heading": "Turbo / GT2 Gen 1 (2005–2008, Petrol (Turbo), Tiptronic)",
+        "years": "2005–2008",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Tiptronic",
+        "items": [
+          {
+            "job": "Tiptronic Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£300",
+            "service_category": "Transmission",
+            "service_item": "Tiptronic Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "300"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 2",
+        "heading": "Turbo / GT2 Gen 2 (2010–2012, Petrol (Turbo))",
+        "years": "2010–2012",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "20k miles",
+            "price": "£370",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "20000",
+            "interval_years": "",
+            "raw_price": "370"
+          },
+          {
+            "job": "Major Service",
+            "interval": "40k miles",
+            "price": "£575",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "575"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "40k miles",
+            "price": "£395",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "395"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "40k miles",
+            "price": "£130",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "40000",
+            "interval_years": "",
+            "raw_price": "130"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "60k miles",
+            "price": "£150",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "150"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 2",
+        "heading": "Turbo / GT2 Gen 2 (2010–2012, Petrol (Turbo), Manual)",
+        "years": "2010–2012",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "120k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "120000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "997 Turbo / GT2 Gen 2",
+        "heading": "Turbo / GT2 Gen 2 (2010–2012, Petrol (Turbo), PDK)",
+        "years": "2010–2012",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "PDK",
+        "items": [
+          {
+            "job": "PDK Oil",
+            "interval": "60k miles",
+            "price": "£215",
+            "service_category": "Transmission",
+            "service_item": "PDK Oil",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "215"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-996",
+    "title": "911 (996)",
+    "model_family": "911",
+    "generation": "996",
+    "variants": [
+      {
+        "name": "996",
+        "heading": "1998–2004",
+        "years": "1998–2004",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Maintenance",
+            "interval": "1 year",
+            "price": "£105",
+            "service_category": "Scheduled Service",
+            "service_item": "Maintenance",
+            "interval_miles": "",
+            "interval_years": "1",
+            "raw_price": "105"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "12k miles / 12 years",
+            "price": "£275",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "12000",
+            "interval_years": "12",
+            "raw_price": "275"
+          },
+          {
+            "job": "Major Service",
+            "interval": "24k miles / 24 years",
+            "price": "£470",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "24000",
+            "interval_years": "24",
+            "raw_price": "470"
+          },
+          {
+            "job": "Spark Plugs",
+            "interval": "24k miles / 48 years",
+            "price": "£190",
+            "service_category": "Ignition",
+            "service_item": "Spark Plugs",
+            "interval_miles": "24000",
+            "interval_years": "48",
+            "raw_price": "190"
+          },
+          {
+            "job": "Air Filter",
+            "interval": "24k miles / 24 years",
+            "price": "£65",
+            "service_category": "Intake",
+            "service_item": "Air Filter",
+            "interval_miles": "24000",
+            "interval_years": "24",
+            "raw_price": "65"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "48k miles / 48 years",
+            "price": "£135",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "48000",
+            "interval_years": "48",
+            "raw_price": "135"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "996",
+        "heading": "1998–2004, Manual",
+        "years": "1998–2004",
+        "powertrain": "",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "96k miles / 96 years",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "96000",
+            "interval_years": "96",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "996",
+        "heading": "1998–2004, Tiptronic",
+        "years": "1998–2004",
+        "powertrain": "",
+        "transmission": "Tiptronic",
+        "items": [
+          {
+            "job": "Tiptronic Gearbox Oil",
+            "interval": "96k miles / 96 years",
+            "price": "£305",
+            "service_category": "Transmission",
+            "service_item": "Tiptronic Gearbox Oil",
+            "interval_miles": "96000",
+            "interval_years": "96",
+            "raw_price": "305"
+          }
+        ]
+      },
+      {
+        "name": "996 GT3",
+        "heading": "GT3 (2001–2004, Petrol (GT))",
+        "years": "2001–2004",
+        "powertrain": "Petrol (GT)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Minor Service",
+            "interval": "12k miles",
+            "price": "£335",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "335"
+          },
+          {
+            "job": "Major Service",
+            "interval": "24k miles",
+            "price": "£780",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "780"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "48k miles",
+            "price": "£185",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "185"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "996 GT3",
+        "heading": "GT3 (2001–2004, Petrol (GT), Manual)",
+        "years": "2001–2004",
+        "powertrain": "Petrol (GT)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "96k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "96000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "996 Turbo / GT2",
+        "heading": "Turbo / GT2 (2001–2004, Petrol (Turbo))",
+        "years": "2001–2004",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Maintenance",
+            "interval": "1 year",
+            "price": "£130",
+            "service_category": "Scheduled Service",
+            "service_item": "Maintenance",
+            "interval_miles": "",
+            "interval_years": "1",
+            "raw_price": "130"
+          },
+          {
+            "job": "Minor Service",
+            "interval": "12k miles",
+            "price": "£325",
+            "service_category": "Scheduled Service",
+            "service_item": "Minor",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "325"
+          },
+          {
+            "job": "Major Service",
+            "interval": "24k miles",
+            "price": "£880",
+            "service_category": "Scheduled Service",
+            "service_item": "Major",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "880"
+          },
+          {
+            "job": "Aux Belt",
+            "interval": "48k miles",
+            "price": "£185",
+            "service_category": "Drive Belt",
+            "service_item": "Aux Belt",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "185"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "20k miles / 2 years",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "20000",
+            "interval_years": "2",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "996 Turbo / GT2",
+        "heading": "Turbo / GT2 (2001–2004, Petrol (Turbo), Manual)",
+        "years": "2001–2004",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Manual",
+        "items": [
+          {
+            "job": "Manual Gearbox Oil",
+            "interval": "96k miles",
+            "price": "£90",
+            "service_category": "Transmission",
+            "service_item": "Manual Gearbox Oil",
+            "interval_miles": "96000",
+            "interval_years": "",
+            "raw_price": "90"
+          }
+        ]
+      },
+      {
+        "name": "996 Turbo / GT2",
+        "heading": "Turbo / GT2 (2001–2004, Petrol (Turbo), Tiptronic)",
+        "years": "2001–2004",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "Tiptronic",
+        "items": [
+          {
+            "job": "Tiptronic Gearbox Oil",
+            "interval": "96k miles",
+            "price": "£305",
+            "service_category": "Transmission",
+            "service_item": "Tiptronic Gearbox Oil",
+            "interval_miles": "96000",
+            "interval_years": "",
+            "raw_price": "305"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-964",
+    "title": "911 (964)",
+    "model_family": "911",
+    "generation": "964",
+    "variants": [
+      {
+        "name": "964 C2 / C4",
+        "heading": "C2 / C4 (1989–1993)",
+        "years": "1989–1993",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£255",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£640",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Service (C2)",
+            "interval": "24k miles",
+            "price": "£245",
+            "service_category": "Other",
+            "service_item": "Service (C2)",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "245"
+          },
+          {
+            "job": "Service (C4)",
+            "interval": "24k miles",
+            "price": "£245",
+            "service_category": "Other",
+            "service_item": "Service (C4)",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "245"
+          },
+          {
+            "job": "Service (C2)",
+            "interval": "48k miles",
+            "price": "£340",
+            "service_category": "Other",
+            "service_item": "Service (C2)",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "340"
+          },
+          {
+            "job": "Service (C4)",
+            "interval": "48k miles",
+            "price": "£370",
+            "service_category": "Other",
+            "service_item": "Service (C4)",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "370"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "964 Turbo / RS",
+        "heading": "Turbo / RS (1989–1993, Petrol (Turbo))",
+        "years": "1989–1993",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£350",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "350"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£745",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "745"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£1055",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "1055"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£1145",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "1145"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-993",
+    "title": "911 (993)",
+    "model_family": "911",
+    "generation": "993",
+    "variants": [
+      {
+        "name": "993 C2 / C4",
+        "heading": "C2 / C4 (1994–1997)",
+        "years": "1994–1997",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£255",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "255"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£565",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "565"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£925",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "925"
+          },
+          {
+            "job": "Service (C2)",
+            "interval": "48k miles",
+            "price": "£975",
+            "service_category": "Other",
+            "service_item": "Service (C2)",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "975"
+          },
+          {
+            "job": "Service (C4)",
+            "interval": "48k miles",
+            "price": "£980",
+            "service_category": "Other",
+            "service_item": "Service (C4)",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "980"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      },
+      {
+        "name": "993 Turbo / S / GT2",
+        "heading": "Turbo / S / GT2 (1995–1997, Petrol (Turbo))",
+        "years": "1995–1997",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£340",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "340"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£670",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "670"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£1065",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "1065"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£1235",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "1235"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-1964-1989",
+    "title": "911 (1964–1989)",
+    "model_family": "911",
+    "generation": "1964–1989",
+    "variants": [
+      {
+        "name": "Early 911",
+        "heading": "Early 911 (1964–1989)",
+        "years": "1964–1989",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£240",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "240"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£585",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "585"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£615",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "615"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£1080",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "1080"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "911-930",
+    "title": "911 (930)",
+    "model_family": "911",
+    "generation": "930",
+    "variants": [
+      {
+        "name": "930 Turbo",
+        "heading": "Turbo (1975–1977, Petrol (Turbo))",
+        "years": "1975–1977",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£280",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "280"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£755",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "755"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£815",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "815"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£1480",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "1480"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "944-8v",
+    "title": "944 8V",
+    "model_family": "944",
+    "generation": "8V",
+    "variants": [
+      {
+        "name": "8V",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£305",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£330",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "330"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£605",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "605"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "944-turbo",
+    "title": "944 Turbo",
+    "model_family": "944",
+    "generation": "Turbo",
+    "variants": [
+      {
+        "name": "Turbo",
+        "heading": "Petrol (Turbo)",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£305",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£350",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "350"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£640",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "944-s2-16v",
+    "title": "944 S2 16V",
+    "model_family": "944",
+    "generation": "S2 16V",
+    "variants": [
+      {
+        "name": "S2 16V",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£330",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "330"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£375",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "375"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£645",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "645"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "928-8v",
+    "title": "928 8V",
+    "model_family": "928",
+    "generation": "8V",
+    "variants": [
+      {
+        "name": "8V",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£210",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "210"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£450",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "450"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£495",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "495"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£610",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "610"
+          },
+          {
+            "job": "Service",
+            "interval": "60k miles",
+            "price": "£895",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "895"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "928-s4-gt-gts",
+    "title": "928 S4 / GT / GTS",
+    "model_family": "928",
+    "generation": "S4 / GT / GTS",
+    "variants": [
+      {
+        "name": "S4 / GT / GTS",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£210",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "210"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£450",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "450"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£495",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "495"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£610",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "610"
+          },
+          {
+            "job": "Service",
+            "interval": "60k miles",
+            "price": "£865",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "60000",
+            "interval_years": "",
+            "raw_price": "865"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "968-1992-1993",
+    "title": "968 (1992–1993)",
+    "model_family": "968",
+    "generation": "1992–1993",
+    "variants": [
+      {
+        "name": "Base",
+        "heading": "Base (1992–1993)",
+        "years": "1992–1993",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£280",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "280"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£355",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "355"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£645",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "645"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "968-tiptronic",
+    "title": "968 Tiptronic",
+    "model_family": "968",
+    "generation": "Tiptronic",
+    "variants": [
+      {
+        "name": "Tiptronic",
+        "heading": "Tiptronic",
+        "years": "",
+        "powertrain": "",
+        "transmission": "Tiptronic",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£280",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "280"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£450",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "450"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£840",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "840"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "968-1994-1995",
+    "title": "968 (1994–1995)",
+    "model_family": "968",
+    "generation": "1994–1995",
+    "variants": [
+      {
+        "name": "Base",
+        "heading": "Base (1994–1995)",
+        "years": "1994–1995",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£280",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "280"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£450",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "450"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£750",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "750"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "924-base",
+    "title": "924 Base",
+    "model_family": "924",
+    "generation": "Base",
+    "variants": [
+      {
+        "name": "Base",
+        "heading": "",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£305",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£330",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "330"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£640",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "640"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "924-turbo-gt-gts",
+    "title": "924 Turbo / GT / GTS",
+    "model_family": "924",
+    "generation": "Turbo / GT / GTS",
+    "variants": [
+      {
+        "name": "Turbo / GT / GTS",
+        "heading": "Petrol (Turbo)",
+        "years": "",
+        "powertrain": "Petrol (Turbo)",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£305",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£350",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "350"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£620",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "620"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "924-924",
+    "title": "924",
+    "model_family": "924",
+    "generation": "924",
+    "variants": [
+      {
+        "name": "924 S",
+        "heading": "S",
+        "years": "",
+        "powertrain": "",
+        "transmission": "",
+        "items": [
+          {
+            "job": "Service",
+            "interval": "6k miles",
+            "price": "£190",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "6000",
+            "interval_years": "",
+            "raw_price": "190"
+          },
+          {
+            "job": "Service",
+            "interval": "12k miles",
+            "price": "£305",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "12000",
+            "interval_years": "",
+            "raw_price": "305"
+          },
+          {
+            "job": "Service",
+            "interval": "24k miles",
+            "price": "£330",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "24000",
+            "interval_years": "",
+            "raw_price": "330"
+          },
+          {
+            "job": "Service",
+            "interval": "48k miles",
+            "price": "£605",
+            "service_category": "Other",
+            "service_item": "Service",
+            "interval_miles": "48000",
+            "interval_years": "",
+            "raw_price": "605"
+          },
+          {
+            "job": "Brake Fluid Change",
+            "interval": "—",
+            "price": "£95",
+            "service_category": "Fluids",
+            "service_item": "Brake Fluid",
+            "interval_miles": "",
+            "interval_years": "",
+            "raw_price": "95"
+          }
+        ]
+      }
+    ]
+  }
+]
