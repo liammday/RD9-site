@@ -230,6 +230,29 @@ def format_variant_heading(
     return name
 
 
+def format_combination_title(
+    model: str,
+    generation: str,
+    variant: str,
+    years: str,
+    powertrain: str,
+    transmission: str,
+) -> str:
+    base = format_section_title(model, generation)
+    heading = format_variant_heading(
+        model,
+        generation,
+        variant,
+        years,
+        powertrain,
+        transmission,
+    )
+
+    if base and heading:
+        return f"{base} — {heading}"
+    return heading or base or model or "Price list"
+
+
 def format_row(row: dict) -> dict:
     job = format_job(row.get("service_category", ""), row.get("service_item", ""))
     interval = format_interval(row.get("interval_miles", ""), row.get("interval_years", ""))
@@ -247,59 +270,62 @@ def format_row(row: dict) -> dict:
 
 
 def build_sections(rows: list[dict]) -> list[dict]:
-    sections: OrderedDict[tuple[str, str], dict] = OrderedDict()
+    grouped: OrderedDict[
+        tuple[str, str], OrderedDict[tuple[str, str, str, str], list[dict]]
+    ] = OrderedDict()
 
     for row in rows:
         model = (row.get("model_family") or row.get("model") or "").strip()
         if not model:
             continue
-        variant = row.get("variant", "")
-        years = row.get("years", "")
+        variant = (row.get("variant") or "").strip()
+        years = (row.get("years") or "").strip()
+        powertrain = (row.get("powertrain") or "").strip()
+        transmission = (row.get("transmission") or "").strip()
         generation = extract_generation(model, variant, years)
-        key = (model, generation)
-        section = sections.setdefault(
-            key,
-            {
-                "model": model,
-                "generation": generation,
-                "variants": OrderedDict(),
-            },
-        )
 
-        variant_key = (
-            (variant or "").strip(),
-            (years or "").strip(),
-            (row.get("powertrain") or "").strip(),
-            (row.get("transmission") or "").strip(),
-        )
-        section["variants"].setdefault(variant_key, []).append(row)
+        model_key = (model, generation)
+        variant_key = (variant, years, powertrain, transmission)
 
-    used_slugs: set[str] = set()
+        model_bucket = grouped.setdefault(model_key, OrderedDict())
+        model_bucket.setdefault(variant_key, []).append(row)
+
+    used_section_slugs: set[str] = set()
+    used_model_slugs: set[str] = set()
+    model_slug_map: dict[tuple[str, str], str] = {}
     structured_sections: list[dict] = []
 
-    for (model, generation), data in sections.items():
-        variants_data = []
-        for (variant, years, powertrain, transmission), entries in data["variants"].items():
-            variants_data.append(
+    for (model, generation), variants in grouped.items():
+        base_title = format_section_title(model, generation)
+        model_slug = model_slug_map.get((model, generation))
+        if model_slug is None:
+            model_slug = unique_slug(slugify(model, generation), used_model_slugs)
+            model_slug_map[(model, generation)] = model_slug
+
+        for (variant, years, powertrain, transmission), entries in variants.items():
+            section_title = format_combination_title(
+                model, generation, variant, years, powertrain, transmission
+            )
+            section_slug = unique_slug(
+                slugify(model, generation, variant, years, powertrain, transmission),
+                used_section_slugs,
+            )
+
+            structured_sections.append(
                 {
+                    "model_family": model,
+                    "generation": generation,
                     "variant": variant,
                     "years": years,
                     "powertrain": powertrain,
                     "transmission": transmission,
-                    "heading": format_variant_heading(model, generation, variant, years, powertrain, transmission),
+                    "slug": section_slug,
+                    "model_slug": model_slug,
+                    "model_title": base_title,
+                    "title": section_title,
                     "rows": [format_row(e) for e in entries],
                 }
             )
-
-        structured_sections.append(
-            {
-                "model_family": model,
-                "generation": generation,
-                "slug": unique_slug(slugify(model, generation), used_slugs),
-                "title": format_section_title(model, generation),
-                "variants": variants_data,
-            }
-        )
 
     return structured_sections
 
@@ -314,43 +340,36 @@ def render_price_sections(sections: list[dict]) -> str:
 
     for section in sections:
         attrs = [f'data-model="{escape(section["slug"])}"']
+        if section.get("model_slug"):
+            attrs.append(f'data-alias="{escape(section["model_slug"])}"')
         attr_str = " ".join(attrs)
         lines.append(f"{inner_indent}<section class=\"price-section hidden\" {attr_str}>")
         lines.append(
             f'{inner_indent}  <h3 class="text-2xl font-bold">{escape(section["title"])}</h3>'
         )
-
-        variants = section.get("variants", [])
-        if not variants:
+        rows = section.get("rows", [])
+        if not rows:
             lines.append(
                 f'{inner_indent}  <p class="mt-2 text-sm text-neutral-300">No price list is available for this model at the moment.</p>'
             )
         else:
-            for idx, variant in enumerate(variants):
-                heading = variant.get("heading", "").strip()
-                if idx > 0 and heading:
-                    lines.append(
-                        f'{inner_indent}  <h4 class="mt-6 font-semibold">{escape(heading)}</h4>'
-                    )
-                margin = "mt-4" if idx == 0 else "mt-2"
+            lines.append(
+                f'{inner_indent}  <div class="mt-4 overflow-x-auto rounded-lg border border-white/10">'
+            )
+            lines.append(f'{inner_indent}    <table class="min-w-full table-auto text-sm">')
+            lines.append(f'{inner_indent}      <thead class="bg-neutral-900/80">')
+            lines.append(
+                f'{inner_indent}        <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price (ex-VAT)</th></tr>'
+            )
+            lines.append(f'{inner_indent}      </thead>')
+            lines.append(f'{inner_indent}      <tbody class="divide-y divide-white/10">')
+            for item in rows:
                 lines.append(
-                    f'{inner_indent}  <div class="{margin} overflow-x-auto rounded-lg border border-white/10">'
+                    f'{inner_indent}        <tr><td class="px-4 py-3">{escape(item["job"])}</td><td class="px-4 py-3">{escape(item["interval"])}</td><td class="px-4 py-3">{escape(item["price"])}</td></tr>'
                 )
-                lines.append(f'{inner_indent}    <table class="min-w-full table-auto text-sm">')
-                lines.append(f'{inner_indent}      <thead class="bg-neutral-900/80">')
-                lines.append(
-                    f'{inner_indent}        <tr><th class="px-4 py-3 text-left font-semibold">Job</th><th class="px-4 py-3 text-left font-semibold">Interval</th><th class="px-4 py-3 text-left font-semibold">Price (ex-VAT)</th></tr>'
-                )
-                lines.append(f'{inner_indent}      </thead>')
-                lines.append(f'{inner_indent}      <tbody class="divide-y divide-white/10">')
-                for item in variant.get("rows", []):
-                    lines.append(
-                        f'{inner_indent}        <tr><td class="px-4 py-3">{escape(item["job"])}</td><td class="px-4 py-3">{escape(item["interval"])}</td><td class="px-4 py-3">{escape(item["price"])}</td></tr>'
-                    )
-                lines.append(f'{inner_indent}      </tbody>')
-                lines.append(f'{inner_indent}    </table>')
-                lines.append(f'{inner_indent}  </div>')
-
+            lines.append(f'{inner_indent}      </tbody>')
+            lines.append(f'{inner_indent}    </table>')
+            lines.append(f'{inner_indent}  </div>')
         lines.append(f"{inner_indent}</section>")
 
     lines.append(f"{outer_indent}</div>")
@@ -359,9 +378,15 @@ def render_price_sections(sections: list[dict]) -> str:
 
 def render_datalist_options(sections: list[dict]) -> str:
     lines = ['              <option data-value="all" value="All models"></option>']
+    seen: set[str] = set()
     for section in sections:
+        model_slug = section.get("model_slug") or section["slug"]
+        if model_slug in seen:
+            continue
+        seen.add(model_slug)
+        model_title = section.get("model_title") or section["title"]
         lines.append(
-            f'              <option data-value="{escape(section["slug"])}" value="{escape(section["title"])}"></option>'
+            f'              <option data-value="{escape(model_slug)}" value="{escape(model_title)}"></option>'
         )
     return "\n".join(lines)
 
@@ -375,17 +400,13 @@ def build_json_payload(sections: list[dict]) -> list[dict]:
                 "title": section["title"],
                 "model_family": section["model_family"],
                 "generation": section["generation"],
-                "variants": [
-                    {
-                        "name": variant.get("variant", ""),
-                        "heading": variant.get("heading", ""),
-                        "years": variant.get("years", ""),
-                        "powertrain": variant.get("powertrain", ""),
-                        "transmission": variant.get("transmission", ""),
-                        "items": variant.get("rows", []),
-                    }
-                    for variant in section.get("variants", [])
-                ],
+                "variant": section.get("variant", ""),
+                "years": section.get("years", ""),
+                "powertrain": section.get("powertrain", ""),
+                "transmission": section.get("transmission", ""),
+                "model_slug": section.get("model_slug", ""),
+                "model_title": section.get("model_title", ""),
+                "items": section.get("rows", []),
             }
         )
     return payload
