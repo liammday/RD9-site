@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "15 6 * * *"  # daily 06:15 UTC (~07:15 UK during winter; ~07:15-08:15 with DST)
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
