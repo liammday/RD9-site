@@ -1,0 +1,22 @@
+# Site settings
+name: RD9 Automotive
+lang: en
+url: https://www.rd9.co.uk
+baseurl: ""
+title: "RD9 Automotive — Porsche & Prestige Specialists"
+description: "RD9 Automotive — Porsche and prestige vehicle specialists. Fixed-price servicing, performance, wheel alignment, EV/hybrid, and pre-purchase inspections."
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins: []
+
+exclude:
+  - "scripts/*.pyc"
+  - "README.md"
+  - "node_modules"
+  - "Gemfile.lock" # will still be committed, but avoids duplication in site output
+  - "vendor"
+  - "*.iml"
+  - "*.swp"
+

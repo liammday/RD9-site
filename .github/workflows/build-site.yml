@@ -1,0 +1,35 @@
+name: Build Jekyll site
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Import latest price list
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          TARGET_HTML: index.html
+          JSON_OUT: _data/prices.json
+          CURRENCY: "GBP"
+        run: |
+          python scripts/build_prices.py
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
