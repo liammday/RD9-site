@@ -24,7 +24,7 @@ jobs:
         env:
           SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
           TARGET_HTML: index.html             # change if your page lives elsewhere
-          JSON_OUT: site/data/prices.json     # optional
+          JSON_OUT: _data/prices.json         # optional
           WRITE_JSONLD: "0"                   # set to "1" after mapping columns in the script
           CURRENCY: "GBP"
         run: |
@@ -41,4 +41,4 @@ jobs:
           delete-branch: true
           add-paths: |
             index.html
-            site/data/prices.json
+            _data/prices.json

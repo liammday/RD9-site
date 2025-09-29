@@ -15,7 +15,7 @@ SHEET_CSV_URL = os.environ.get("SHEET_CSV_URL")
 TARGET_HTML   = os.environ.get("TARGET_HTML", "index.html")
 MARK_START    = "<!-- BEGIN:PRICE_LIST -->"
 MARK_END      = "<!-- END:PRICE_LIST -->"
-JSON_OUT      = os.environ.get("JSON_OUT", "site/data/prices.json")  # optional
+JSON_OUT      = os.environ.get("JSON_OUT", "_data/prices.json")  # optional
 WRITE_JSONLD  = os.environ.get("WRITE_JSONLD", "0") == "1"           # opt-in
 JSONLD_START  = "<!-- BEGIN:PRICE_LIST_JSONLD -->"
 JSONLD_END    = "<!-- END:PRICE_LIST_JSONLD -->"
