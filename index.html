@@ -2149,10 +2149,13 @@ lang: en
       const showAllBtn = document.getElementById('showAllBtn');
       const hideAllWrapper = document.getElementById('hideAllWrapper');
       const hideAllBtn = document.getElementById('hideAllBtn');
+      const priceSection = document.getElementById('prices');
       const noResults = document.getElementById('noResults');
       const sections = Array.from(document.querySelectorAll('.price-section'));
       let allVisible = false;
       let hideAllVisible = false;
+      let priceSectionInView = false;
+      let toggleButtonInView = true;
 
       const options = Array.from(datalist.options);
       const labelToCode = Object.fromEntries(options.map(o => [o.value, o.dataset.value]));
@@ -2216,7 +2219,7 @@ lang: en
         applyFilter(null);
         showAllBtn.textContent = 'Show all';
         allVisible = false;
-        concealHideAllButton();
+        updateHideAllButton();
         input.classList.remove('ring-2', 'ring-white/40');
         updateClear();
       }
@@ -2250,6 +2253,14 @@ lang: en
         });
       }
 
+      function updateHideAllButton() {
+        if (allVisible && priceSectionInView && !toggleButtonInView) {
+          revealHideAllButton();
+        } else {
+          concealHideAllButton();
+        }
+      }
+
       // Initialise from cookie
       const saved = getCookie('selectedCar');
       if (saved && codeToLabel[saved]) {
@@ -2260,7 +2271,7 @@ lang: en
         if (saved === 'all') {
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
-          revealHideAllButton();
+          updateHideAllButton();
         }
       }
 
@@ -2281,14 +2292,14 @@ lang: en
           applyFilter(code);
           showAllBtn.textContent = 'Show all';
           allVisible = false;
-          concealHideAllButton();
+          updateHideAllButton();
           input.classList.add('ring-2', 'ring-white/40');
         } else {
           applyFilter(null);
           noResults.classList.remove('hidden');
           showAllBtn.textContent = 'Show all';
           allVisible = false;
-          concealHideAllButton();
+          updateHideAllButton();
           input.classList.remove('ring-2', 'ring-white/40');
         }
       });
@@ -2300,7 +2311,7 @@ lang: en
           applyFilter('all');
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
-          revealHideAllButton();
+          updateHideAllButton();
           input.classList.add('ring-2', 'ring-white/40');
           updateClear();
         } else {
@@ -2308,6 +2319,32 @@ lang: en
         }
       });
       hideAllBtn.addEventListener('click', clearSelection);
+
+      if ('IntersectionObserver' in window) {
+        if (showAllBtn) {
+          const toggleObserver = new IntersectionObserver(entries => {
+            toggleButtonInView = entries.some(entry => entry.isIntersecting);
+            updateHideAllButton();
+          });
+          toggleObserver.observe(showAllBtn);
+        } else {
+          toggleButtonInView = false;
+        }
+
+        if (priceSection) {
+          const priceObserver = new IntersectionObserver(entries => {
+            priceSectionInView = entries.some(entry => entry.isIntersecting);
+            updateHideAllButton();
+          });
+          priceObserver.observe(priceSection);
+        } else {
+          priceSectionInView = true;
+        }
+      } else {
+        priceSectionInView = true;
+        toggleButtonInView = false;
+        updateHideAllButton();
+      }
       })();
     </script>
 
