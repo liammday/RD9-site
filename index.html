@@ -198,6 +198,21 @@ lang: en
     </div>
   </section>
 
+  <style>
+    #hideAllWrapper.sticky-hide-all {
+      position: sticky;
+      bottom: calc(1.5rem + var(--safe-bottom, 0px));
+      justify-content: center;
+      z-index: 30;
+      pointer-events: none;
+    }
+
+    #hideAllWrapper.sticky-hide-all .hide-all-btn {
+      pointer-events: auto;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    }
+  </style>
+
   <!-- Prices -->
   <section id="prices" class="bg-neutral-900/60 border-t border-white/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
@@ -258,6 +273,12 @@ lang: en
               <option data-value="924-924" value="924"></option>
 </datalist>
           <button id="showAllBtn" type="button" class="mt-2 self-end text-sm text-neutral-300 underline hover:text-white">Show all</button>
+          <div id="hideAllWrapper" class="mt-6 flex justify-end hidden">
+            <button id="hideAllBtn" type="button"
+                    class="hide-all-btn inline-flex items-center rounded-full border border-white/20 bg-neutral-900/80 px-6 py-2 text-sm font-medium text-neutral-200 shadow-lg backdrop-blur-sm transition hover:border-white/40 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30">
+              Hide all
+            </button>
+          </div>
           <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
         </div>
       </div>
@@ -2126,9 +2147,12 @@ lang: en
       const clearBtn = document.getElementById('clearCar');
       const datalist = document.getElementById('carOptions');
       const showAllBtn = document.getElementById('showAllBtn');
+      const hideAllWrapper = document.getElementById('hideAllWrapper');
+      const hideAllBtn = document.getElementById('hideAllBtn');
       const noResults = document.getElementById('noResults');
       const sections = Array.from(document.querySelectorAll('.price-section'));
       let allVisible = false;
+      let hideAllVisible = false;
 
       const options = Array.from(datalist.options);
       const labelToCode = Object.fromEntries(options.map(o => [o.value, o.dataset.value]));
@@ -2192,8 +2216,38 @@ lang: en
         applyFilter(null);
         showAllBtn.textContent = 'Show all';
         allVisible = false;
+        concealHideAllButton();
         input.classList.remove('ring-2', 'ring-white/40');
         updateClear();
+      }
+
+      function revealHideAllButton() {
+        if (hideAllVisible) return;
+        hideAllVisible = true;
+        hideAllWrapper.classList.remove('hidden');
+        hideAllWrapper.classList.add('sticky-hide-all');
+        hideAllBtn.classList.remove('pointer-events-none');
+        gsap.killTweensOf(hideAllBtn);
+        gsap.fromTo(hideAllBtn, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' });
+      }
+
+      function concealHideAllButton() {
+        if (!hideAllVisible) return;
+        hideAllVisible = false;
+        hideAllBtn.classList.add('pointer-events-none');
+        gsap.killTweensOf(hideAllBtn);
+        gsap.to(hideAllBtn, {
+          opacity: 0,
+          y: -16,
+          duration: 0.3,
+          ease: 'power2.in',
+          onComplete: () => {
+            hideAllWrapper.classList.add('hidden');
+            hideAllWrapper.classList.remove('sticky-hide-all');
+            hideAllBtn.classList.remove('pointer-events-none');
+            gsap.set(hideAllBtn, { opacity: 1, y: 0 });
+          }
+        });
       }
 
       // Initialise from cookie
@@ -2206,6 +2260,7 @@ lang: en
         if (saved === 'all') {
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
+          revealHideAllButton();
         }
       }
 
@@ -2226,12 +2281,14 @@ lang: en
           applyFilter(code);
           showAllBtn.textContent = 'Show all';
           allVisible = false;
+          concealHideAllButton();
           input.classList.add('ring-2', 'ring-white/40');
         } else {
           applyFilter(null);
           noResults.classList.remove('hidden');
           showAllBtn.textContent = 'Show all';
           allVisible = false;
+          concealHideAllButton();
           input.classList.remove('ring-2', 'ring-white/40');
         }
       });
@@ -2243,12 +2300,14 @@ lang: en
           applyFilter('all');
           showAllBtn.textContent = 'Hide all';
           allVisible = true;
+          revealHideAllButton();
           input.classList.add('ring-2', 'ring-white/40');
           updateClear();
         } else {
           clearSelection();
         }
       });
+      hideAllBtn.addEventListener('click', clearSelection);
       })();
     </script>
 
