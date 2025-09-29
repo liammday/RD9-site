@@ -1,0 +1,114 @@
+name: Update prices and publish site
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      continue: ${{ steps.continue.outputs.continue }}
+      price-changed: ${{ steps.price-check.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update price list
+        id: price-check
+        shell: bash
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          TARGET_HTML: index.html
+          JSON_OUT: _data/prices.json
+          WRITE_JSONLD: "0"
+          CURRENCY: "GBP"
+        run: |
+          set -euo pipefail
+          python scripts/build_prices.py
+
+          if [[ -n "$(git status --porcelain -- index.html _data/prices.json)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Determine workflow continuation
+        id: continue
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PRICE_CHANGED: ${{ steps.price-check.outputs.changed }}
+        run: |
+          if [[ "$EVENT_NAME" == "schedule" && "$PRICE_CHANGED" != "true" ]]; then
+            echo "continue=false" >> "$GITHUB_OUTPUT"
+            echo "Nightly run detected no price changes; skipping build and deploy steps." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "continue=true" >> "$GITHUB_OUTPUT"
+            if [[ "$EVENT_NAME" == "push" ]]; then
+              echo "Workflow triggered by push to main; build and deploy will proceed regardless of price changes." >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "Proceeding with build because the scheduled run detected price changes." >> "$GITHUB_STEP_SUMMARY"
+            fi
+          fi
+
+      - name: Set up Ruby
+        if: steps.continue.outputs.continue == 'true'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Configure Pages
+        if: steps.continue.outputs.continue == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        if: steps.continue.outputs.continue == 'true'
+        run: bundle exec jekyll build --trace
+
+      - name: Upload artifact
+        if: steps.continue.outputs.continue == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Create Pull Request
+        if: steps.price-check.outputs.changed == 'true' && github.event_name != 'push'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: update price list from Google Sheets"
+          title: "Update price list from Google Sheets"
+          body: "Automated update."
+          branch: "prices/update"
+          delete-branch: true
+          add-paths: |
+            index.html
+            _data/prices.json
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.continue == 'true' && github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
