@@ -273,12 +273,6 @@ lang: en
               <option data-value="924-924" value="924"></option>
 </datalist>
           <button id="showAllBtn" type="button" class="mt-2 self-end text-sm text-neutral-300 underline hover:text-white">Show all</button>
-          <div id="hideAllWrapper" class="mt-6 flex justify-end hidden">
-            <button id="hideAllBtn" type="button"
-                    class="hide-all-btn inline-flex items-center rounded-full border border-white/20 bg-neutral-900/80 px-6 py-2 text-sm font-medium text-neutral-200 shadow-lg backdrop-blur-sm transition hover:border-white/40 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30">
-              Hide all
-            </button>
-          </div>
           <p id="noResults" class="hidden mt-4 text-sm font-semibold text-red-500">No price list is available for this model. Please <a href="#contact" class="underline">contact us</a> for a bespoke quote.</p>
         </div>
       </div>
@@ -1948,7 +1942,13 @@ lang: en
           </div>
         </section>
       </div>
-<!-- END:PRICE_LIST -->
+      <div id="hideAllWrapper" class="mt-10 flex justify-end hidden">
+        <button id="hideAllBtn" type="button"
+                class="hide-all-btn inline-flex items-center rounded-full border border-white/20 bg-neutral-900/80 px-6 py-2 text-sm font-medium text-neutral-200 shadow-lg backdrop-blur-sm transition hover:border-white/40 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30">
+          Hide all
+        </button>
+      </div>
+      <!-- END:PRICE_LIST -->
     </div>
   </section>
 
