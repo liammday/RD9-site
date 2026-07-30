@@ -562,16 +562,16 @@
     ]
   },
   {
-    "id": "macan-2014-2024-base-2014-2024",
-    "title": "Macan (2014–2024) — Base (2014–2024)",
+    "id": "macan-2014-2018-base-2014-2018",
+    "title": "Macan (2014-2018) — Base (2014-2018)",
     "model_family": "Macan",
-    "generation": "2014–2024",
+    "generation": "2014-2018",
     "variant": "Base",
-    "years": "2014–2024",
+    "years": "2014-2018",
     "powertrain": "",
     "transmission": "",
-    "model_slug": "macan-2014-2024",
-    "model_title": "Macan (2014–2024)",
+    "model_slug": "macan-2014-2018",
+    "model_title": "Macan (2014-2018)",
     "items": [
       {
         "job": "Oil Service",
@@ -636,16 +636,16 @@
     ]
   },
   {
-    "id": "macan-2014-2024-base-2014-2024-pdk",
-    "title": "Macan (2014–2024) — Base (2014–2024, PDK)",
+    "id": "macan-2014-2018-base-2014-2018-pdk",
+    "title": "Macan (2014-2018) — Base (2014-2018, PDK)",
     "model_family": "Macan",
-    "generation": "2014–2024",
+    "generation": "2014-2018",
     "variant": "Base",
-    "years": "2014–2024",
+    "years": "2014-2018",
     "powertrain": "",
     "transmission": "PDK",
-    "model_slug": "macan-2014-2024",
-    "model_title": "Macan (2014–2024)",
+    "model_slug": "macan-2014-2018",
+    "model_title": "Macan (2014-2018)",
     "items": [
       {
         "job": "PDK Oil",
@@ -660,16 +660,16 @@
     ]
   },
   {
-    "id": "macan-2014-2024-turbo-gts-2014-2024-petrol-turbo",
-    "title": "Macan (2014–2024) — Turbo / GTS (2014–2024, Petrol (Turbo))",
+    "id": "macan-2014-2018-turbo-gts-2014-2018-petrol-turbo",
+    "title": "Macan (2014-2018) — Turbo / GTS (2014-2018, Petrol (Turbo))",
     "model_family": "Macan",
-    "generation": "2014–2024",
+    "generation": "2014-2018",
     "variant": "Turbo / GTS",
-    "years": "2014–2024",
+    "years": "2014-2018",
     "powertrain": "Petrol (Turbo)",
     "transmission": "",
-    "model_slug": "macan-2014-2024",
-    "model_title": "Macan (2014–2024)",
+    "model_slug": "macan-2014-2018",
+    "model_title": "Macan (2014-2018)",
     "items": [
       {
         "job": "Oil Service",
@@ -734,16 +734,16 @@
     ]
   },
   {
-    "id": "macan-2014-2024-turbo-gts-2014-2024-petrol-turbo-pdk",
-    "title": "Macan (2014–2024) — Turbo / GTS (2014–2024, Petrol (Turbo), PDK)",
+    "id": "macan-2014-2018-turbo-gts-2014-2018-petrol-turbo-pdk",
+    "title": "Macan (2014-2018) — Turbo / GTS (2014-2018, Petrol (Turbo), PDK)",
     "model_family": "Macan",
-    "generation": "2014–2024",
+    "generation": "2014-2018",
     "variant": "Turbo / GTS",
-    "years": "2014–2024",
+    "years": "2014-2018",
     "powertrain": "Petrol (Turbo)",
     "transmission": "PDK",
-    "model_slug": "macan-2014-2024",
-    "model_title": "Macan (2014–2024)",
+    "model_slug": "macan-2014-2018",
+    "model_title": "Macan (2014-2018)",
     "items": [
       {
         "job": "PDK Oil",
@@ -758,16 +758,256 @@
     ]
   },
   {
-    "id": "macan-2014-2024-s-2014-2024",
-    "title": "Macan (2014–2024) — S (2014–2024)",
+    "id": "macan-2014-2018-s-2014-2018",
+    "title": "Macan (2014-2018) — S (2014-2018)",
     "model_family": "Macan",
-    "generation": "2014–2024",
+    "generation": "2014-2018",
     "variant": "S",
-    "years": "2014–2024",
+    "years": "2014-2018",
     "powertrain": "",
     "transmission": "",
-    "model_slug": "macan-2014-2024",
-    "model_title": "Macan (2014–2024)",
+    "model_slug": "macan-2014-2018",
+    "model_title": "Macan (2014-2018)",
+    "items": [
+      {
+        "job": "Oil Service",
+        "interval": "Timeline variable",
+        "price": "£235",
+        "service_category": "Scheduled Service",
+        "service_item": "Oil Service",
+        "interval_miles": "",
+        "interval_years": "timeline variable",
+        "raw_price": "235"
+      },
+      {
+        "job": "Minor Service",
+        "interval": "20k miles",
+        "price": "£410",
+        "service_category": "Scheduled Service",
+        "service_item": "Minor",
+        "interval_miles": "20000",
+        "interval_years": "",
+        "raw_price": "410"
+      },
+      {
+        "job": "Major Service",
+        "interval": "40k miles",
+        "price": "£585",
+        "service_category": "Scheduled Service",
+        "service_item": "Major",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "585"
+      }
+    ]
+  },
+  {
+    "id": "macan-2019-2021-base-2019-2021",
+    "title": "Macan (2019-2021) — Base (2019-2021)",
+    "model_family": "Macan",
+    "generation": "2019-2021",
+    "variant": "Base",
+    "years": "2019-2021",
+    "powertrain": "",
+    "transmission": "",
+    "model_slug": "macan-2019-2021",
+    "model_title": "Macan (2019-2021)",
+    "items": [
+      {
+        "job": "Oil Service",
+        "interval": "Timeline variable",
+        "price": "£235",
+        "service_category": "Scheduled Service",
+        "service_item": "Oil Service",
+        "interval_miles": "",
+        "interval_years": "timeline variable",
+        "raw_price": "235"
+      },
+      {
+        "job": "Minor Service",
+        "interval": "20k miles",
+        "price": "£390",
+        "service_category": "Scheduled Service",
+        "service_item": "Minor",
+        "interval_miles": "20000",
+        "interval_years": "",
+        "raw_price": "390"
+      },
+      {
+        "job": "Major Service",
+        "interval": "40k miles",
+        "price": "£585",
+        "service_category": "Scheduled Service",
+        "service_item": "Major",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "585"
+      },
+      {
+        "job": "Spark Plugs",
+        "interval": "40k miles",
+        "price": "£180",
+        "service_category": "Ignition",
+        "service_item": "Spark Plugs",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "180"
+      },
+      {
+        "job": "Air Filter",
+        "interval": "80k miles",
+        "price": "£75",
+        "service_category": "Intake",
+        "service_item": "Air Filter",
+        "interval_miles": "80000",
+        "interval_years": "",
+        "raw_price": "75"
+      },
+      {
+        "job": "Brake Fluid Change",
+        "interval": "20k miles / 2 years",
+        "price": "£95",
+        "service_category": "Fluids",
+        "service_item": "Brake Fluid",
+        "interval_miles": "20000",
+        "interval_years": "2",
+        "raw_price": "95"
+      }
+    ]
+  },
+  {
+    "id": "macan-2019-2021-base-2019-2021-pdk",
+    "title": "Macan (2019-2021) — Base (2019-2021, PDK)",
+    "model_family": "Macan",
+    "generation": "2019-2021",
+    "variant": "Base",
+    "years": "2019-2021",
+    "powertrain": "",
+    "transmission": "PDK",
+    "model_slug": "macan-2019-2021",
+    "model_title": "Macan (2019-2021)",
+    "items": [
+      {
+        "job": "PDK Oil",
+        "interval": "40k miles",
+        "price": "£270",
+        "service_category": "Transmission",
+        "service_item": "PDK Oil",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "270"
+      }
+    ]
+  },
+  {
+    "id": "macan-2019-2021-turbo-gts-2019-2021-petrol-turbo",
+    "title": "Macan (2019-2021) — Turbo / GTS (2019-2021, Petrol (Turbo))",
+    "model_family": "Macan",
+    "generation": "2019-2021",
+    "variant": "Turbo / GTS",
+    "years": "2019-2021",
+    "powertrain": "Petrol (Turbo)",
+    "transmission": "",
+    "model_slug": "macan-2019-2021",
+    "model_title": "Macan (2019-2021)",
+    "items": [
+      {
+        "job": "Oil Service",
+        "interval": "Timeline variable",
+        "price": "£235",
+        "service_category": "Scheduled Service",
+        "service_item": "Oil Service",
+        "interval_miles": "",
+        "interval_years": "timeline variable",
+        "raw_price": "235"
+      },
+      {
+        "job": "Minor Service",
+        "interval": "20k miles",
+        "price": "£410",
+        "service_category": "Scheduled Service",
+        "service_item": "Minor",
+        "interval_miles": "20000",
+        "interval_years": "",
+        "raw_price": "410"
+      },
+      {
+        "job": "Major Service",
+        "interval": "40k miles",
+        "price": "£600",
+        "service_category": "Scheduled Service",
+        "service_item": "Major",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "600"
+      },
+      {
+        "job": "Spark Plugs",
+        "interval": "40k miles",
+        "price": "£205",
+        "service_category": "Ignition",
+        "service_item": "Spark Plugs",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "205"
+      },
+      {
+        "job": "Air Filter",
+        "interval": "80k miles",
+        "price": "£110",
+        "service_category": "Intake",
+        "service_item": "Air Filter",
+        "interval_miles": "80000",
+        "interval_years": "",
+        "raw_price": "110"
+      },
+      {
+        "job": "Brake Fluid Change",
+        "interval": "20k miles / 2 years",
+        "price": "£95",
+        "service_category": "Fluids",
+        "service_item": "Brake Fluid",
+        "interval_miles": "20000",
+        "interval_years": "2",
+        "raw_price": "95"
+      }
+    ]
+  },
+  {
+    "id": "macan-2019-2021-turbo-gts-2019-2021-petrol-turbo-pdk",
+    "title": "Macan (2019-2021) — Turbo / GTS (2019-2021, Petrol (Turbo), PDK)",
+    "model_family": "Macan",
+    "generation": "2019-2021",
+    "variant": "Turbo / GTS",
+    "years": "2019-2021",
+    "powertrain": "Petrol (Turbo)",
+    "transmission": "PDK",
+    "model_slug": "macan-2019-2021",
+    "model_title": "Macan (2019-2021)",
+    "items": [
+      {
+        "job": "PDK Oil",
+        "interval": "40k miles",
+        "price": "£270",
+        "service_category": "Transmission",
+        "service_item": "PDK Oil",
+        "interval_miles": "40000",
+        "interval_years": "",
+        "raw_price": "270"
+      }
+    ]
+  },
+  {
+    "id": "macan-2019-2021-s-2019-2021",
+    "title": "Macan (2019-2021) — S (2019-2021)",
+    "model_family": "Macan",
+    "generation": "2019-2021",
+    "variant": "S",
+    "years": "2019-2021",
+    "powertrain": "",
+    "transmission": "",
+    "model_slug": "macan-2019-2021",
+    "model_title": "Macan (2019-2021)",
     "items": [
       {
         "job": "Oil Service",
